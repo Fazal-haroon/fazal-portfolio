@@ -1,0 +1,91 @@
+.fazal{
+    background-color: black;
+    height: 3000px;
+    padding-top: 3%;
+}
+
+.head{
+    color:#fff;
+}
+
+.skills{
+    background-color: black;
+    margin-left: 4%;
+    color: white;
+    padding-top: 5%;
+    text-shadow: 8px 8px 0px rgba(0,0,0,0.2);
+    font-size: 3rem;
+}
+
+.link{
+    color:#01bf71;
+    cursor: pointer;
+}
+
+.list{
+    padding-top: 2%;  
+    color: #fff;
+    width: 100%;
+    list-style-type: square;
+    text-indent: -4.4%;
+    font-size: 1.2rem;
+    font-weight: 600;
+ }
+
+
+ .img{
+    width: 40%;
+    height: 40%;
+    margin-left: 8%;
+    padding-top:5% ;
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+.pro{
+    margin-top: 5%;
+    justify-content: space-between;
+    width: 98%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    width: 100%;
+}
+
+@media screen and (max-width:960px){
+
+
+.img{
+    margin-left: 9%;
+    width: 90%;
+    display: contents;
+ }
+
+
+
+.pro{
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 6%;
+    margin-bottom: 70%;
+}
+
+.yasir{
+    height: 3200px;
+    padding-top: 8%;
+}
+
+.list{
+    padding-left: 1%;
+    text-indent: -6%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+}
+

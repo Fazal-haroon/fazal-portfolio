@@ -1,0 +1,59 @@
+.fazal{
+   display: flex;
+    background-color:black;
+    color: white;
+    height: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+   padding-bottom: 20%;
+}
+
+.img{
+    border-radius: 1000000000px;
+    height: 300px;
+    width: 300px;
+    display: block;
+    
+}
+
+.heading{
+
+  color: #fff;
+  font-size: larger;
+  width: 50%;
+}
+.head{
+    
+    color: #01bf71;
+    
+
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8%;
+    width: 25%;
+    cursor: pointer;
+    color: #01bf71;
+}
+
+@media screen and (max-width:960px){
+
+    .heading{
+        width: 80%;
+        }
+        .icon{
+            
+           position: static;
+            width: 50%;
+            margin-top: 10%;
+            
+        }
+        .yasir{
+            padding-bottom: 100%;
+        }
+   
+}
