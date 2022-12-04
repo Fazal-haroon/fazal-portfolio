@@ -36,13 +36,13 @@ const Experience = () => {
 
     <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Java Developer</h1>
 
-    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Jul 2022 - Present</h1>
+    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Jul 2022 - Dec 2022</h1>
 
     <p className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on Chat Application as Backend<span style={{color:"#fff"}}> Java </span>Developer.</p>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Chat Application Project developed in <span style={{color:"#fff"}}>Microservices</span> Architecture.</li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on Java 1.8, Spring Boot, Lombok, MyBatis, MongoDB, Redis, Swagger, @ Custom Annotation, Handler interceptor, and Filter.</li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on group chat application, merge nine member profile image one images, the first 9 members of the group/room. </li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Logging Request and Response Body In Spring Boot and store it in the database. Whenever we need logging feature, we just add the custom annotation on the end-point and we store the data of logging in database.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on Java 1.8, Spring Boot, MyBatis, MongoDB, Redis, Swagger, @ Custom Annotation, Handler interceptor, and Filter.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on a group chat application, merging nine-member profile images one image, and the first 9 members of the group.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Logging Request and Response Body In Spring Boot and storing it in the database. Whenever we need a logging feature, we just <br></br>add the custom annotation on the end-point and we store the data of logging in the database.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Using ZenTao Project Management System.</li>
     <a className={classes.experience} style={{fontSize:"1.2rem",color:"#fff",}} href="https://ltsql.ql-lts888666.com/login" >TiTalk</a>
 
@@ -66,7 +66,7 @@ const Experience = () => {
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Hands-on experience on Tomcat and WildFly JBoss Servers.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>JSF Framework and Primefaces. Created Registration Process.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Knowledge of creating restful Web Services.</li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>1+ years of experience in Web development using Core- Java, JavaEE, Spring Framework, JSP, JSF, Servlet, Spring, Spring-MVC, Spring Security, JDBC, Hibernate, Microservices, Spring Boot, and Spring JPA Jasper Reports.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>1+ years of experience in Web development using Core- Java, JavaEE, Spring Framework, JSP, JSF, Servlet, Spring, Spring-MVC, <br></br>Spring Security, JDBC, Hibernate, Microservices, Spring Boot, and Spring JPA Jasper Reports.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Has a strong ability to learn new technologies in a short span and implement them independently.</li>
     <a className={classes.experience} style={{fontSize:"1.2rem",color:"#fff",}} href="https://tiger.siparadigm.com/tiger/" >Tiger</a>
 
@@ -93,16 +93,15 @@ const Experience = () => {
 <div className={classes.experience}>
 
 
-<h1 className={classes.experience} style={{fontSize:"2.3rem"}}>University of Engineering and Technology Peshawar, Pakistan</h1>
+<h1 className={classes.experience} style={{fontSize:"2.3rem"}}>Satsuma Droid Pvt. Ltd</h1>
 
-    <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Graduation Project Java Developer</h1>
+    <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Junior Java Developer</h1>
 
-    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Sep 2020 - Sep 2021</h1>
+    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Sep 2019 - Jul 2020</h1>
 
-    <p className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on HRMS as Backend <span style={{color:"#fff"}}>Java</span> Developer.</p>
+    <p className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on HRMS as Backend <span style={{color:"#fff"}}>Junior Java</span> Developer.</p>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>A Human Resource Management Solution developed in Microservices Architecture.</li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked with Java and Spring Boot as the backend to build a website using React Javascript library as the frontend.</li>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Technologies : Frontend React JavaScript library, Java, Spring, Spring Boot, Spring Security, Spring Cloud Gateway, Spring Netflix Eureka, Netflix Hystrix, Spring JPA, and MySQL Database.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Technologies : Java, Spring, Spring Boot, Spring Security, Spring Cloud API Gateway, Netflix Eureka, Netflix Hystrix, Spring JPA, and MySQL Database.</li>
 
 </div>
 
@@ -111,7 +110,7 @@ const Experience = () => {
 
 <h1 className={classes.experience} style={{fontSize:"2.3rem"}}>Satsuma Droid Pvt. Ltd</h1>
 
-    <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Android Java Developer</h1>
+    <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Android Java Developer(Internship)</h1>
 
     <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Jul 2019 - Sep 2019</h1>
 

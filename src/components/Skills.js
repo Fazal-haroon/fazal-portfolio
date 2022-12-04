@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from '../assets/css/Skills.module.css'
-import { FaAws,FaJenkins,FaJava,FaReact,FaHtml5,FaCss3,FaBootstrap,FaMicrosoft } from 'react-icons/fa';
-import { SiAzurepipelines,SiNetlify,SiHeroku,SiJest,SiRedis,SiSpring,SiSpringsecurity,SiPostgresql,SiMongodb,SiPostman,SiJavascript,SiSpringboot } from "react-icons/si"
+import { FaAws,FaJenkins,FaJava,FaAngular,FaHtml5,FaCss3,FaJira,FaBootstrap,FaMicrosoft } from 'react-icons/fa';
+import { SiAzurepipelines,SiNetlify,SiHeroku,SiJest,SiRedis,SiSpring,SiHibernate,SiSpringsecurity,SiPostgresql,SiMongodb,SiPostman,SiJavascript,SiTypescript,SiSpringboot, SiJava, SiOracle, SiReact, SiRedux } from "react-icons/si"
 import { FiFigma } from 'react-icons/fi';
 import { DiGit } from 'react-icons/di';
-import { GrNode,GrMysql,GrDocker } from 'react-icons/gr';
+import { GrNode,GrMysql,GrDocker, GrGithub } from 'react-icons/gr';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion'
 import "aos/dist/aos.css"
@@ -43,26 +43,40 @@ const Skills = () => {
 <p1>Css3</p1>
 </div>
 
-{/* <div className={classes.box} >
+<div className={classes.box} >
 <FaBootstrap/>
 <p1>Bootstrap</p1>
-</div> */}
+</div>
 
 <div className={classes.box} >
 <SiJavascript/>
 <p1>JavaScript</p1>
 </div>
 
+
 <div className={classes.box} >
-<FaReact/>
+<SiTypescript/>
+<p1>TypeSript</p1>
+</div>
+
+{/* <div className={classes.box} >
+<FaAngular/>
+<p1>Angular</p1>
+</div> */}
+
+
+<div className={classes.box} >
+<SiReact/>
 <p1>React</p1>
 </div>
+
 
 {/* <div className={classes.box} >
 <SiRedux/>
 <p1>Redux</p1>
-</div>
+</div> */}
 
+{/* 
 <div className={classes.box} >
 <SiTypescript/>
 <p1>TypeSript</p1>
@@ -93,6 +107,24 @@ const Skills = () => {
 <p1>Java</p1>
 </div>
 
+
+<div className={classes.box} >
+<SiHibernate/>
+<p1>Hibernate</p1>
+</div>
+
+
+<div className={classes.box} >
+<SiJava/>
+<p1>Microservices</p1>
+</div>
+
+
+<div className={classes.box} >
+<SiJava/>
+<p1>Rest / Soap Services</p1>
+</div>
+
 <div className={classes.box} >
 <SiSpring/>
 <p1>Spring</p1>
@@ -103,15 +135,27 @@ const Skills = () => {
 <p1>Springboot</p1>
 </div>
 
+
+<div className={classes.box} >
+<SiSpring/>
+<p1>Spring Data</p1>
+</div>
+
 <div className={classes.box} >
 <SiSpringsecurity/>
 <p1>Spring Security</p1>
 </div>
 
+
 <div className={classes.box} >
-<SiRedis/>
-<p1>Redis</p1>
+<SiSpringsecurity/>
+<p1>OAuth2</p1>
 </div>
+
+{/* <div className={classes.box} >
+<SiOracle/>
+<p1>Oracle</p1>
+</div> */}
 
 {/* <div className={classes.box} >
 <FaMicrosoft/>
@@ -143,10 +187,10 @@ const Skills = () => {
 <p1>Mongodb</p1>
 </div>
 
-<div className={classes.box} >
+{/* <div className={classes.box} >
 <SiPostgresql/>
 <p1>Postgresql</p1>
-</div>
+</div> */}
 
 </div>
 
@@ -167,8 +211,8 @@ const Skills = () => {
 </div>
 
 <div className={classes.box} >
-<FaJenkins/>
-<p1>Jenkins</p1>
+<GrGithub/>
+<p1>Gibhub</p1>
 </div>
 
 {/* <div className={classes.box} >
@@ -182,10 +226,10 @@ const Skills = () => {
 </div>
 <div className={classes.box} >
 
-{/* <SiHeroku/>
-<p1>Heroku</p1>
+<FaJenkins/>
+<p1>Jenkins</p1>
 </div>
-<div className={classes.box} > */}
+<div className={classes.box} >
 
 <SiNetlify/>
 <p1>Netlify</p1>
@@ -196,10 +240,15 @@ const Skills = () => {
 <p1>Git</p1>
 </div>
 
+
+<div className={classes.box} >
+<FaJira/>
+<p1>Jira</p1>
+</div>
+
 </div>
 
 </div>
 };
 
 export default Skills;
-
