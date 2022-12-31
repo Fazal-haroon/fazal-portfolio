@@ -32,10 +32,10 @@ strings:
 
 <a style={{ color: 'inherit', textDecoration: 'inherit'}} href="kharoon187@gmail.com"><FiMail/></a>
 <a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://github.com/Fazal-haroon' ><FaGithub/></a>
-<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://www.linkedin.com/in/fazal-haroon-384b2013a/' ><FaLinkedin/></a>
 <a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://stackoverflow.com/users/9947525/fazal-haroon'><FaStackOverflow/></a>
-<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://twitter.com/FazalHaroon4'><FaTwitter/></a>
+<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://www.linkedin.com/in/fazal-haroon-384b2013a/' ><FaLinkedin/></a>
 <a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://www.youtube.com/c/fazaltuts4uf'><FaYoutube/></a>
+<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://twitter.com/FazalHaroon4'><FaTwitter/></a>
 
 </div>
 

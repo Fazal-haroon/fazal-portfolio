@@ -58,10 +58,10 @@ const Experience = () => {
 
     <h1 className={classes.experience} style={{fontSize:"1.5rem",color:"#01bf71"}}>Java Developer</h1>
 
-    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Oct 2021 - Oct 2022</h1>
+    <h1 className={classes.experience} style={{fontSize:"1.3rem",color:"#fff"}}>Oct 2021 - Sep 2022</h1>
 
     <p className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on Healthcare Software as Backend<span style={{color:"#fff"}}> Java </span>Developer.</p>
-    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>KT - Knowledge Transfer/Transition and Handover. Official KT phase through documents. From Jul-2022 to Oct-2022 Online.</li>
+    <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>KT - Knowledge Transfer/Transition and Handover. Official KT phase through documents. From Jul-2022 to Sep-2022 Online.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Worked on <span style={{color:"#fff"}}>Java</span> and J2EE.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>Hands-on experience on Tomcat and WildFly JBoss Servers.</li>
     <li className={classes.experience} style={{fontSize:"1.2rem",color:"#01bf71"}}>JSF Framework and Primefaces. Created Registration Process.</li>

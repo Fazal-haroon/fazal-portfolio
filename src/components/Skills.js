@@ -59,10 +59,10 @@ const Skills = () => {
 <p1>TypeSript</p1>
 </div>
 
-{/* <div className={classes.box} >
+ <div className={classes.box} >
 <FaAngular/>
 <p1>Angular</p1>
-</div> */}
+</div>
 
 
 <div className={classes.box} >
@@ -71,10 +71,10 @@ const Skills = () => {
 </div>
 
 
-{/* <div className={classes.box} >
+ <div className={classes.box} >
 <SiRedux/>
 <p1>Redux</p1>
-</div> */}
+</div>
 
 {/* 
 <div className={classes.box} >
