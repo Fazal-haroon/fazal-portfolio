@@ -1,37 +1,43 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import classes from '../assets/css/Navbar.module.css'
-import { NavLink } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
 
-const [clicked,setClicked] = useState(false) 
+    const [clicked, setClicked] = useState(false)
 
-const  handleClick = () => setClicked(!clicked)
+    const handleClick = () => setClicked(!clicked)
 
- return <>
-  
- <nav className={classes.fazal}>
+    return <>
 
-<h2 className={classes.resume} >
+        <nav className={classes.fazal}>
 
-<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://drive.google.com/file/d/1hvGnkIKNo4eLl9jBG20JfW0alBRjHt_q/view?usp=sharing'>RESUME</a></h2>
+            <h2 className={classes.resume}>
 
-<ul className={clicked ? classes.mobilelinks : classes.navlinks}  onClick={()=>setClicked(false)} >
+                <a style={{color: 'inherit', textDecoration: 'inherit'}}
+                   href='https://drive.google.com/file/d/1hvGnkIKNo4eLl9jBG20JfW0alBRjHt_q/view?usp=sharing'>RESUME</a>
+            </h2>
 
-<li><NavLink className={classes.about}  style={{ color: 'inherit', textDecoration: 'inherit'}}  to="/" >ABOUT</NavLink></li>
-<li><NavLink className={classes.about} style={{ color: 'inherit', textDecoration: 'inherit'}}  to="/skills"  >SKILLS</NavLink></li>
-<li><NavLink className={classes.about}  style={{ color: 'inherit', textDecoration: 'inherit'}}  to="/project" >PROJECTS</NavLink></li>
-<li><NavLink className={classes.about} style={{ color: 'inherit', textDecoration: 'inherit'}} to="/experience" >EXPERIENCE</NavLink></li>
+            <ul className={clicked ? classes.mobilelinks : classes.navlinks} onClick={() => setClicked(false)}>
 
-</ul>
+                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                             to="/">ABOUT</NavLink></li>
+                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                             to="/skills">SKILLS</NavLink></li>
+                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                             to="/project">PROJECTS</NavLink></li>
+                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                             to="/experience">EXPERIENCE</NavLink></li>
 
-<button  className={classes.mobile} onClick={handleClick} >
+            </ul>
 
-{clicked ? <i className="fas fa-times"></i> :  <i className="fas fa-bars"></i>}
+            <button className={classes.mobile} onClick={handleClick}>
 
-</button>
-  </nav>
-  </>;
+                {clicked ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+
+            </button>
+        </nav>
+    </>;
 };
 
 export default Navbar;

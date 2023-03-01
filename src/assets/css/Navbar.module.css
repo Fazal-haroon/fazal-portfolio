@@ -1,11 +1,11 @@
-.fazal{
-   height: 100px;
-   display: flex;
-   justify-content: space-around;
-   background-color: black;
+.fazal {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
 }
 
-.navlinks{
+.navlinks {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -13,104 +13,102 @@
     color: #fff;
     font-weight: 650;
     margin-top: 2.6%;
- }
+}
 
 
-  
-.resume{
+.resume {
     color: #fff;
     font-weight: 600;
     margin-top: 2%;
     cursor: pointer;
 }
 
-.resume:hover{
+.resume:hover {
     color: #01bf71;
 }
 
 
-.about{
-   font-size: 20px;
-   cursor: pointer;
-   padding: 10px 20px;
+.about {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 
 .about:hover {
-   border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #01bf71;
 }
 
 
-
-.mobilelinks{
-   display: none;
-}
-
-.mobile{
-   display: none;
-}
-
-@media screen and (max-width:960px){
-
-
-.navlinks{
+.mobilelinks {
     display: none;
-    color: #fff;
 }
 
-.about:hover{
-    border-bottom: 0px;
+.mobile {
+    display: none;
 }
 
-.resume{
-    display: flex;
-    position: absolute;
-    top:15px;
-    left: 35px;
-    color: #fff;
-    z-index: 1000000000;
-}
+@media screen and (max-width: 960px) {
 
-.mobilelinks{
 
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: black;
-    color: #fff;
-    top: 10%;
-    text-align: center;
-    transition: all 0.5s ease-out;
-    width: 100%;
-    height: 50%;
-    padding-top: 5%;
-    z-index: 999999;
-    font-weight: 700;
-}
+    .navlinks {
+        display: none;
+        color: #fff;
+    }
 
-.about{
-    color: #fff;
-    text-align: center;
-    justify-content: space-between;
-    transition: all 0.5s ease;
-}
+    .about:hover {
+        border-bottom: 0px;
+    }
 
-.mobilelinks>li:hover{
-    color: #01bf71;
-}
+    .resume {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+        color: #fff;
+        z-index: 1000000000;
+    }
 
-.mobile{
-    display: block;
-    position: absolute;
-    font-size: 30px;
-    color: white;
-    background-color: #01bf71;
-    border: none;
-    outline: none;
-    top:15px;
-    right: 25px;
-}
+    .mobilelinks {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: black;
+        color: #fff;
+        top: 10%;
+        text-align: center;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        height: 50%;
+        padding-top: 5%;
+        z-index: 999999;
+        font-weight: 700;
+    }
+
+    .about {
+        color: #fff;
+        text-align: center;
+        justify-content: space-between;
+        transition: all 0.5s ease;
+    }
+
+    .mobilelinks > li:hover {
+        color: #01bf71;
+    }
+
+    .mobile {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #01bf71;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
 
 }

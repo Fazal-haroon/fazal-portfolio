@@ -1,36 +1,38 @@
-.fazal{
-   display: flex;
-    background-color:black;
+.fazal {
+    display: flex;
+    background-color: black;
     color: white;
     height: 1000px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-   padding-bottom: 20%;
+    padding-bottom: 20%;
 }
 
-.img{
+.img {
     border-radius: 1000000000px;
     height: 300px;
     width: 300px;
     display: block;
-    
+
 }
 
-.heading{
+.heading {
 
-  color: #fff;
-  font-size: larger;
-  width: 50%;
+    color: #fff;
+    font-size: larger;
+    width: 50%;
 }
-.head{
-    
+
+.head {
+
     color: #01bf71;
-    
+
 
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -40,20 +42,22 @@
     color: #01bf71;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width: 960px) {
 
-    .heading{
+    .heading {
         width: 80%;
-        }
-        .icon{
-            
-           position: static;
-            width: 50%;
-            margin-top: 10%;
-            
-        }
-        .fazal{
-            padding-bottom: 100%;
-        }
-   
+    }
+
+    .icon {
+
+        position: static;
+        width: 50%;
+        margin-top: 10%;
+
+    }
+
+    .fazal {
+        padding-bottom: 100%;
+    }
+
 }
