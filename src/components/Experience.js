@@ -51,10 +51,16 @@ const Experience = () => {
                     <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Jul 2022 -
                         Present</h1>
 
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Chat Application
-                        developed in<span style={{color: "#fff"}}> Microservices</span> Architecture.</p>
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Payment Gateway
-                        system developed in<span style={{color: "#fff"}}> Monolithic</span> Architecture.</p>
+                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on Chat Application and Payment Gateway as Backend <span style={{color: "#fff"}}>Java</span> Developer.</p>
+
+                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Chat Application
+                        developed in<span style={{color: "#fff"}}> Microservices</span> Architecture.
+                    </li>
+
+                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Payment Gateway
+                        system developed in<span style={{color: "#fff"}}> Monolithic</span> Architecture.
+                    </li>
+
                     <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Documents the
                         following
                     </li>
