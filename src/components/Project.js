@@ -1,55 +1,142 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from '../assets/css/Project.module.css'
-import web from "../assets/images/web.png"
-import ad1 from "../assets/images/ad1.png"
-import ad2 from "../assets/images/ad2.png"
-import web2 from "../assets/images/web2.png"
-import web3 from "../assets/images/web4.png"
-import cam1 from "../assets/images/cam1.png"
-import cam2 from "../assets/images/cam2.png"
-import cam3 from "../assets/images/cam3.jpeg"
-import elec1 from "../assets/images/elec1.jpeg"
-import elec2 from "../assets/images/elec2.jpeg"
-import elec4 from "../assets/images/elec4.jpeg"
+import globalpay1 from "../assets/images/globalpay1.png"
+import globalpay2 from "../assets/images/globalpay2.png"
+import globalpay3 from "../assets/images/globalpay3.png"
+import globalpay4 from "../assets/images/globalpay4.png"
+import globalpay5 from "../assets/images/globalpay5.png"
+import titalk1 from "../assets/images/titalk1.png"
+import titalk2 from "../assets/images/titalk2.png"
+import fazaleamaal from "../assets/images/fazaleamal.png"
+import fazaleamaal2 from "../assets/images/fazaleamal2.png"
+import fazaleamaal3 from "../assets/images/fazaleamal3.png"
+import tigerImg1 from "../assets/images/tiger1.png"
+import tigerImg2 from "../assets/images/tiger2.png"
+import ytImg1 from "../assets/images/Yt1.png"
+import ytImg2 from "../assets/images/Yt2.png"
+import ytImg3 from "../assets/images/Yt3.png"
+import hrmsImg1 from "../assets/images/hrms1.jpeg"
+import hrmsImg2 from "../assets/images/hrms2.jpeg"
+import hrmsImg3 from "../assets/images/hrms3.jpeg"
 import Carousel from 'react-bootstrap/Carousel';
-import { useEffect } from 'react';
 import "aos/dist/aos.css"
 import Aos from "aos"
 
 const Project = () => {
-  useEffect(() => {
-    Aos.init({duration:1000});
-  }, []);
-  return <>
- <div className={classes.fazal}>
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+    return <>
+        <div className={classes.fazal}>
 
-  
 
-<div className={classes.img}  >
+            {/*6th Project*/}
+            <div className={classes.img} style={{marginTop: "00rem"}}>
 
-<Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={web}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-  
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={web2}
-      alt="Second slide"
-    />
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={globalpay1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
 
-    <Carousel.Caption>
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-  {/* <Carousel.Item>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={globalpay2}
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={globalpay3}
+                            alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item><Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={globalpay4}
+                        alt="fourth slide"
+                    />
+
+                    <Carousel.Caption>
+
+                    </Carousel.Caption>
+                </Carousel.Item><Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={globalpay5}
+                        alt="fifth slide"
+                    />
+
+                    <Carousel.Caption>
+
+                    </Carousel.Caption>
+                </Carousel.Item>
+                </Carousel>
+
+
+                <div className={classes.pro}>
+
+
+                    <div className={classes.content}>
+
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway -
+                            GlobalPay</h1>
+
+                        <p className={classes.link} href="">GlobalPay</p>
+
+                        <p className={classes.list}>Payment Gateway: GlobalPay - (backend and frontend)</p>
+
+                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · Web Services · Web Development
+                            · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven ·
+                            TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira
+                        </li>
+
+                    </div>
+                    <div/>
+                </div>
+            </div>
+
+            {/*5th Project*/}
+            <div className={classes.img} style={{marginTop: "00rem"}}>
+
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={titalk1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={titalk2}
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
     <img
       className="d-block w-100"
       src={web3}
@@ -60,63 +147,57 @@ const Project = () => {
  
     </Carousel.Caption>
   </Carousel.Item> */}
-</Carousel>
+                </Carousel>
 
 
+                <div className={classes.pro}>
 
 
+                    <div className={classes.content}>
 
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk |
+                            WeChat</h1>
 
+                        <a className={classes.link} href="https://ltsql.ql-lts888666.com/login">TiTalk</a>
 
+                        <p className={classes.list}>Worked on Chat Application as Backend Java Developer.</p>
 
-<div className={classes.pro}>
+                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · Web Services · Web Development
+                            · Spring Framework · MyBatis · Swagger API · Lombok · Spring · Spring Boot · Maven · MySQL ·
+                            Bitbucket · Zentao Project Management System
+                        </li>
 
+                    </div>
+                    <div/>
+                </div>
+            </div>
 
-<div className={classes.content}>
+            {/*4th Project*/}
+            <div className={classes.img} style={{marginTop: "-32rem"}}>
 
-<h1 className={classes.head} data-aos-once="true" data-aos="zoom-in"  >Chat Application(TiTalk)</h1>
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={tigerImg1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
 
-<a className={classes.link} href="https://ltsql.ql-lts888666.com/login" >TiTalk</a>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={tigerImg2}
+                            alt="Second slide"
+                        />
 
-<p className={classes.list}>Worked on Chat Application as Backend Java Developer.</p>
-<li className={classes.list} >Chat Application Project developed in Microservices Architecture.</li>
-<li className={classes.list} >Worked on Java 1.8, Spring Boot, Lombok, MyBatis, MongoDB, Redis, Swagger, @ Custom Annotation, Handler interceptor, and Filter.</li>
-<li className={classes.list} >Worked on group chat application, merge nine member profile image one images, the first 9 members of the group/room. 
-</li> 
-<li className={classes.list} >Logging Request and Response Body In Spring Boot and store it in the database. Whenever we need logging feature, we just add the custom annotation on the end-point and we store the data of logging in database.</li> 
-<li className={classes.list} >Using ZenTao Project Management System.</li> 
+                        <Carousel.Caption>
 
-</div>
-<div/>
-</div>
-</div>
-   
-{/*second  */}
-<div className={classes.img} style={{marginTop:"35rem"}}>
-
-<Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={cam1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-  
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={cam2}
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-  {/* <Carousel.Item>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
     <img
       className="d-block w-100"
       src={cam3}
@@ -127,156 +208,194 @@ const Project = () => {
  
     </Carousel.Caption>
   </Carousel.Item> */}
-</Carousel>
+                </Carousel>
 
 
-<div className={classes.pro}>
+                <div className={classes.pro}>
 
 
-<div className={classes.content}>
+                    <div className={classes.content}>
 
-<h1 className={classes.head} data-aos-once="true" data-aos="zoom-in"  >Tiger</h1>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
 
-<a className={classes.link} href="https://tiger.siparadigm.com/tiger/" >Tiger</a>
+                        <a className={classes.link} href="https://tiger.siparadigm.com/tiger/">Tiger</a>
 
-<p className={classes.list}>Worked on Healthcare Software as a Backend Java Developer.</p>
-<li className={classes.list} >Worked on Java and J2EE.</li>
-<li className={classes.list} >Hands-on experience on Tomcat and WildFly JBoss Servers.</li>
-<li className={classes.list} >JSF Framework and Primefaces. Created Registration Process.</li>
-<li className={classes.list} >Knowledge of creating restful Web Services.</li>
-<li className={classes.list} >1+ years of experience in Web development using Core- Java, JavaEE, Spring Framework, JSP, JSF, Servlet, Spring, Spring-MVC, Spring Security, JDBC, Hibernate, Microservices, Spring Boot, and Spring JPA Jasper Reports.</li>
-<li className={classes.list} >Has a strong ability to learn new technologies in a short span and implement them independently.</li>
+                        <p className={classes.list}>This is a web-based tool for a laboratory in the US to facilitate
+                            the flow of the tests to be performed against cases.</p>
+                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · EJB · JSF · Primefaces ·
+                            Hibernate · Spring Boot · MariaDB
+                        </li>
 
-</div>
-<div/>
-</div>
-</div>
-   
-   
-{/*third  */}
-
-<div className={classes.img}  style={{marginTop:"-38rem"}}  >
-
-<Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={elec1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-  
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={elec2}
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={elec4}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
- 
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+                    </div>
+                    <div/>
+                </div>
+            </div>
 
 
-<div className={classes.pro}>
+            {/*3rd Project*/}
+            <div className={classes.img} style={{marginTop: "-32rem"}}>
+
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={hrmsImg1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={hrmsImg2}
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={hrmsImg3}
+                            alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
 
 
-<div className={classes.content}>
-
-<h1 className={classes.head} data-aos-once="true" data-aos="zoom-in" >HRMS</h1>
-
-<p className={classes.link} href="" >Human Resource Management Solution</p>
-
-<p className={classes.list}>Worked on HRMS as Full Stack.</p>
-<li className={classes.list} >A Human Resource Management Solution developed in Microservices Architecture.</li>
-<li className={classes.list} >Worked with Java and Spring Boot as the backend to build a website using React Javascript library as the frontend.</li>
-<li className={classes.list} >Technologies : Frontend React JavaScript library, Java, Spring, Spring Boot, Spring Security, Spring Cloud Gateway, Spring Netflix Eureka, Netflix Hystrix, Spring JPA, and MySQL Database.</li>
-
-</div>
-<div/>
-</div>
-</div>
-   
-
-   
-fourth 
-<div className={classes.img} style={{marginTop:"-3rem"}}   >
-
-<Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={ad1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-  
-    </Carousel.Caption>
-  </Carousel.Item>
-  {/* <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={ad2}
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      
-    </Carousel.Caption>
-  </Carousel.Item> */}
-  {/* <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={web3}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
- 
-    </Carousel.Caption>
-  </Carousel.Item> */}
-</Carousel>
-
-  <div className={classes.pro}>
+                <div className={classes.pro}>
 
 
-<div className={classes.content}>
-<h1 className={classes.head} data-aos-once="true" data-aos="zoom-in"  >Fazal-E-Amaal</h1>
-<a className={classes.link} href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US" >Fazal-E-Amaal</a>
+                    <div className={classes.content}>
 
-<p className={classes.list}>Worked on Islamic Book Android App as Java Android Developer.</p>
-<li className={classes.list} >Fazail-E-Amaal Islamic Book Application.</li>
-<li className={classes.list} >Technologies : Java, Android Studio, Android developer tools, XML, and SQLite Database.</li>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HRMS - Graduation
+                            Project</h1>
 
-</div>
-<div/>
-  </div>
-  </div>
-   
+                        <p className={classes.link} href="">Human Resource Management Solution</p>
+                        <p className={classes.list}>A Human Resource Management Solution developed in Microservices
+                            Architecture.
+                        </p>
+                        <li className={classes.list}>Skills : Frontend React JavaScript library · Java · Spring · Spring
+                            Boot · Spring Security · Spring Cloud API Gateway · Netflix Eureka · Netflix Hystrix ·
+                            Spring JPA · MySQL Database.
+                        </li>
 
-</div> 
-  
-  
-  
-  
-  </>;
+                    </div>
+                    <div/>
+                </div>
+            </div>
 
+            {/*2nd Project*/}
+            <div className={classes.img} style={{marginTop: "-25rem"}}>
 
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={ytImg1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={ytImg2}
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={ytImg3}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">YouTube Content
+                            Creator</h1>
+                        <a className={classes.link} href="https://www.youtube.com/c/FazalTuts4Uf">Fazal Tuts4U</a>
+                        <p className={classes.list}>Education and Tutorial Channel</p>
+                        <li className={classes.list}>Skills : YouTube · snappa.com · Adobe Premiere Pro cc · Videoscribe
+                            Animation · Techsmith CamtAsia · Techsmith Snagit
+                        </li>
+
+                    </div>
+                    <div/>
+                </div>
+            </div>
+
+            {/*1st Project*/}
+            <div className={classes.img} style={{marginTop: "-25rem"}}>
+
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={fazaleamaal}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={fazaleamaal2}
+                            alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={fazaleamaal3}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Fazail E Amaal</h1>
+                        <a className={classes.link}
+                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazal-E-Amaal</a>
+                        <p className={classes.list}>Fazail-E-Amaal Islamic Book Application.</p>
+                        <li className={classes.list}>Skills : Java · Android Studio · Android developer tools ·
+                            XML · SQLite
+                            Database
+                        </li>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+        </div>
+    </>;
 
 };
 
