@@ -20,11 +20,11 @@ const Skills = () => {
  
     {/*frontend*/}
 
-   <h1 className={classes.skills}>
-     Tech i'm familiar with:
-    </h1>
+   <h3 className={classes.skills}>
+     Tech I'm familiar with:
+    </h3>
     
-<h1 className={classes.skills} style={{fontSize:"2.3rem"}}>Frontend</h1>
+<h1 className={classes.skills} style={{fontSize:"2.0rem"}}>Frontend</h1>
   <div  data-aos-once="true" data-aos="zoom-out"  className={classes.tech}>
 
 
@@ -89,7 +89,7 @@ const Skills = () => {
 
 {/*backend*/}
 
-<h1 className={classes.skills} style={{fontSize:"2.3rem"}} >Backend</h1>
+<h1 className={classes.skills} style={{fontSize:"2.0rem"}} >Backend</h1>
   <div data-aos="zoom-out"  data-aos-once="true" className={classes.tech}>
       
 {/* <div className={classes.box} >
@@ -196,7 +196,7 @@ const Skills = () => {
 
 {/*deployment*/}
 
-<h1 className={classes.skills} style={{fontSize:"2.3rem"}}  >Deployment</h1>
+<h1 className={classes.skills} style={{fontSize:"2.0rem"}}  >Deployment</h1>
   <div  data-aos="zoom-out" data-aos-once="true" className={classes.tech}>
       
   <div className={classes.box} >
@@ -219,7 +219,7 @@ const Skills = () => {
 <SiJest/>
 <p1>Jest</p1>
 </div> */}
-  
+
   <div className={classes.box} >
 <FaAws/>
 <p1>Aws</p1>

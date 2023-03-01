@@ -12,9 +12,9 @@ const  handleClick = () => setClicked(!clicked)
   
  <nav className={classes.fazal}>
 
-<h1 className={classes.resume} >
+<h2 className={classes.resume} >
 
-<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://drive.google.com/file/d/1hvGnkIKNo4eLl9jBG20JfW0alBRjHt_q/view?usp=sharing'>RESUME</a></h1>
+<a style={{ color: 'inherit', textDecoration: 'inherit'}} href='https://drive.google.com/file/d/1hvGnkIKNo4eLl9jBG20JfW0alBRjHt_q/view?usp=sharing'>RESUME</a></h2>
 
 <ul className={clicked ? classes.mobilelinks : classes.navlinks}  onClick={()=>setClicked(false)} >
 
