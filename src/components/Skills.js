@@ -16,7 +16,7 @@ const Skills = () => {
     Aos.init({duration:1000});
   }, []);
 
-  return<div className={classes.yasir}>
+  return<div className={classes.fazal}>
  
     {/*frontend*/}
 

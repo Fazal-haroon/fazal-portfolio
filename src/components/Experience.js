@@ -10,7 +10,7 @@ const Experience = () => {
         Aos.init({duration:1000});
       }, []);
   return (
-    <div  className={classes.yasir}>
+    <div  className={classes.fazal}>
 
        <div>
 
