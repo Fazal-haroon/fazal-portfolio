@@ -49,7 +49,7 @@ const Experience = () => {
                         Developer</h1>
 
                     <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Jul 2022 -
-                        Present</h1>
+                        June 2023</h1>
 
                     <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on Chat Application and Payment Gateway as Backend <span style={{color: "#fff"}}>Java</span> Developer.</p>
 

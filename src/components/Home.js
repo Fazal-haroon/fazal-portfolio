@@ -38,7 +38,7 @@ const Navbarcss = () => {
                 <a style={{color: 'inherit', textDecoration: 'inherit'}}
                    href='https://stackoverflow.com/users/9947525/fazal-haroon'><FaStackOverflow/></a>
                 <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://www.linkedin.com/in/fazal-haroon-384b2013a/'><FaLinkedin/></a>
+                   href='https://www.linkedin.com/in/fazalharoon/'><FaLinkedin/></a>
                 <a style={{color: 'inherit', textDecoration: 'inherit'}}
                    href='https://www.youtube.com/c/fazaltuts4uf'><FaYoutube/></a>
                 <a style={{color: 'inherit', textDecoration: 'inherit'}}
