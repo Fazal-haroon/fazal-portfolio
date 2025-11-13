@@ -31,7 +31,7 @@ const Project = () => {
 
 
             {/*6th Project*/}
-            <div className={classes.img} style={{marginTop: "00rem"}}>
+            <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>
@@ -112,7 +112,7 @@ const Project = () => {
             </div>
 
             {/*5th Project*/}
-            <div className={classes.img} style={{marginTop: "00rem"}}>
+            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>
@@ -173,7 +173,7 @@ const Project = () => {
             </div>
 
             {/*4th Project*/}
-            <div className={classes.img} style={{marginTop: "-32rem"}}>
+            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>
@@ -233,7 +233,7 @@ const Project = () => {
 
 
             {/*3rd Project*/}
-            <div className={classes.img} style={{marginTop: "-32rem"}}>
+            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>
@@ -294,7 +294,7 @@ const Project = () => {
             </div>
 
             {/*2nd Project*/}
-            <div className={classes.img} style={{marginTop: "-25rem"}}>
+            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>
@@ -345,7 +345,7 @@ const Project = () => {
             </div>
 
             {/*1st Project*/}
-            <div className={classes.img} style={{marginTop: "-25rem"}}>
+            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
 
                 <Carousel fade>
                     <Carousel.Item>

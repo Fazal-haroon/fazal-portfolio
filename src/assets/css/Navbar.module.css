@@ -112,3 +112,15 @@
     }
 
 }
+
+.active {
+    color: #01bf71;               /* highlight color */
+    border-bottom: 3px solid #01bf71;
+}
+
+.about {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}

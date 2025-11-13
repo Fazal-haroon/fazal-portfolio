@@ -1,13 +1,12 @@
 .fazal {
     display: flex;
-    background-color: black;
-    color: white;
-    height: 1000px;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 20%;
+    min-height: 100vh;   /* or 100vh */
+    background: #000;
+    color: #fff;
+    padding: 4rem 1rem;
 }
 
 .img {

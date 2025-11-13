@@ -20,13 +20,20 @@ const Navbar = () => {
 
             <ul className={clicked ? classes.mobilelinks : classes.navlinks} onClick={() => setClicked(false)}>
 
-                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                <li><NavLink className={({ isActive }) =>
+                                 isActive ? `${classes.about} ${classes.active}` : classes.about
+                } style={{color: 'inherit', textDecoration: 'inherit'}}
                              to="/">ABOUT</NavLink></li>
-                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
-                             to="/skills">SKILLS</NavLink></li>
-                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                <li><NavLink to="/skills" className={({ isActive }) =>
+                                 isActive ? `${classes.about} ${classes.active}` : classes.about
+                } style={{color: 'inherit', textDecoration: 'inherit'}}>SKILLS</NavLink></li>
+                <li><NavLink className={({ isActive }) =>
+                                 isActive ? `${classes.about} ${classes.active}` : classes.about
+                } style={{color: 'inherit', textDecoration: 'inherit'}}
                              to="/project">PROJECTS</NavLink></li>
-                <li><NavLink className={classes.about} style={{color: 'inherit', textDecoration: 'inherit'}}
+                <li><NavLink className={({ isActive }) =>
+                                 isActive ? `${classes.about} ${classes.active}` : classes.about
+                } style={{color: 'inherit', textDecoration: 'inherit'}}
                              to="/experience">EXPERIENCE</NavLink></li>
 
             </ul>

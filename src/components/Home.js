@@ -6,7 +6,7 @@ import fazal from "../assets/images/fazal.png"
 
 import {FaGithub, FaLinkedin, FaStackOverflow, FaTwitter, FaYoutube} from "react-icons/fa";
 
-const Navbarcss = () => {
+const Home = () => {
     return <div className={classes.fazal}>
 
         <img src={fazal} alt="Avatar" className={classes.img}>
@@ -50,4 +50,4 @@ const Navbarcss = () => {
     </div>;
 };
 
-export default Navbarcss
+export default Home
