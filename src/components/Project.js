@@ -202,13 +202,8 @@ const Project = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-
-
                 <div className={classes.pro}>
-
-
                     <div className={classes.content}>
-
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
                         <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
                            rel="noreferrer">Tiger</a>
@@ -232,7 +227,6 @@ const Project = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -241,9 +235,7 @@ const Project = () => {
                             src={hrmsImg2}
                             alt="Second slide"
                         />
-
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -252,9 +244,7 @@ const Project = () => {
                             src={hrmsImg3}
                             alt="Third slide"
                         />
-
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -282,7 +272,6 @@ const Project = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -292,7 +281,6 @@ const Project = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -301,9 +289,7 @@ const Project = () => {
                             src={ytImg2}
                             alt="Second slide"
                         />
-
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
