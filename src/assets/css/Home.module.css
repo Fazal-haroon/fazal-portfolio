@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 100vh;   /* or 100vh */
+    min-height: 100vh;
     background: #000;
     color: #fff;
     padding: 4rem 1rem;

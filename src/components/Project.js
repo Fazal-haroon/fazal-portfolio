@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
 import classes from '../assets/css/Project.module.css'
+import almaerp from "../assets/images/almaerp.png"
+import almaerp1 from "../assets/images/almaerp1.png"
 import globalpay1 from "../assets/images/globalpay1.png"
 import globalpay2 from "../assets/images/globalpay2.png"
 import globalpay3 from "../assets/images/globalpay3.png"
@@ -10,11 +12,13 @@ import titalk2 from "../assets/images/titalk2.png"
 import fazaleamaal from "../assets/images/fazaleamal.png"
 import fazaleamaal2 from "../assets/images/fazaleamal2.png"
 import fazaleamaal3 from "../assets/images/fazaleamal3.png"
+import fazaleamaal4 from "../assets/images/fazaileamaal4.png"
 import tigerImg1 from "../assets/images/tiger1.png"
 import tigerImg2 from "../assets/images/tiger2.png"
 import ytImg1 from "../assets/images/Yt1.png"
 import ytImg2 from "../assets/images/Yt2.png"
 import ytImg3 from "../assets/images/Yt3.png"
+import ytImgU1 from "../assets/images/yt4.png"
 import hrmsImg1 from "../assets/images/hrms1.jpeg"
 import hrmsImg2 from "../assets/images/hrms2.jpeg"
 import hrmsImg3 from "../assets/images/hrms3.jpeg"
@@ -29,10 +33,47 @@ const Project = () => {
     return <>
         <div className={classes.fazal}>
 
+            {/*7th Project*/}
+            <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={almaerp}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={almaerp1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s ERP</h1>
+                        <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
+                           rel="noreferrer">AlmaERP</a>
+                        <p className={classes.list}>Develop and maintain Almabani’s HRMS ERP using Java Spring Boot, Angular, MySQL, and Jasper Reports, ensuring system reliability and performance</p>
+                        <li className={classes.list}>Tech: Java 11 · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · Web Development · TypeScript · JavaScript · Angular · MySQL · Jasper Reports · Git · Jira</li>
+                        <li className={classes.list}>
+                            Security & Integration: Focused on reliability, performance, and comprehensive security across each layer of the system, ensuring safe integrations and consistent operation.
+                        </li>
+                    </div>
+                    <div/>
+                </div>
+            </div>
 
             {/*6th Project*/}
             <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -41,7 +82,6 @@ const Project = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -63,7 +103,6 @@ const Project = () => {
                         />
 
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item><Carousel.Item>
                     <img
@@ -71,9 +110,7 @@ const Project = () => {
                         src={globalpay4}
                         alt="fourth slide"
                     />
-
                     <Carousel.Caption>
-
                     </Carousel.Caption>
                 </Carousel.Item><Carousel.Item>
                     <img
@@ -83,29 +120,15 @@ const Project = () => {
                     />
 
                     <Carousel.Caption>
-
                     </Carousel.Caption>
                 </Carousel.Item>
                 </Carousel>
-
-
                 <div className={classes.pro}>
-
-
                     <div className={classes.content}>
-
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway -
-                            GlobalPay</h1>
-
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway</h1>
                         <p className={classes.link} href="">GlobalPay</p>
-
-                        <p className={classes.list}>Payment Gateway: GlobalPay - (backend and frontend)</p>
-
-                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · Web Services · Web Development
-                            · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven ·
-                            TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira
-                        </li>
-
+                        <p className={classes.list}>Payment Gateway System – Monolithic Architecture - Full Stack: Angular (Frontend), Spring Boot (Backend)</p>
+                        <li className={classes.list}>Tech: Java 1.8 · Web Services · Web Development · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub · Jira</li>
                     </div>
                     <div/>
                 </div>
@@ -136,45 +159,20 @@ const Project = () => {
 
                         </Carousel.Caption>
                     </Carousel.Item>
-                    {/* <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={web3}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
- 
-    </Carousel.Caption>
-  </Carousel.Item> */}
                 </Carousel>
-
-
                 <div className={classes.pro}>
-
-
                     <div className={classes.content}>
-
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk |
-                            WeChat</h1>
-
-                        <a className={classes.link} href="https://ltsql.ql-lts888666.com/login">TiTalk</a>
-
-                        <p className={classes.list}>Worked on Chat Application as Backend Java Developer.</p>
-
-                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · Web Services · Web Development
-                            · Spring Framework · MyBatis · Swagger API · Lombok · Spring · Spring Boot · Maven · MySQL ·
-                            Bitbucket · Zentao Project Management System
-                        </li>
-
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk (WeChat)</h1>
+                        <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
+                           rel="noreferrer">TiTalk</a>
+                        <p className={classes.list}>TiTalk Chat Application – Microservices Architecture - Backend: Spring Boot</p>
+                        <li className={classes.list}>Tech: Java 1.8 · IntelliJ IDEA · Web Services · Web Development · Spring Framework · Hibernate · MyBatis · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira · Zentao Project Management System</li>
                     </div>
                     <div/>
                 </div>
             </div>
-
             {/*4th Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -192,22 +190,9 @@ const Project = () => {
                             src={tigerImg2}
                             alt="Second slide"
                         />
-
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
-                    {/* <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={cam3}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
- 
-    </Carousel.Caption>
-  </Carousel.Item> */}
                 </Carousel>
 
 
@@ -217,24 +202,16 @@ const Project = () => {
                     <div className={classes.content}>
 
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
-
-                        <a className={classes.link} href="https://tiger.siparadigm.com/tiger/">Tiger</a>
-
-                        <p className={classes.list}>This is a web-based tool for a laboratory in the US to facilitate
-                            the flow of the tests to be performed against cases.</p>
-                        <li className={classes.list}>Skills : Java 1.8 · IntelliJ IDEA · EJB · JSF · Primefaces ·
-                            Hibernate · Spring Boot · MariaDB
-                        </li>
-
+                        <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
+                           rel="noreferrer">Tiger</a>
+                        <p className={classes.list}>A web-based laboratory management system for a U.S.-based healthcare company, streamlining the management of test cases and results</p>
+                        <li className={classes.list}>Tech: Java 1.8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins CI/CD · Jira · Mirth Connect · Linux</li>
                     </div>
                     <div/>
                 </div>
             </div>
-
-
             {/*3rd Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -269,34 +246,33 @@ const Project = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-
-
                 <div className={classes.pro}>
-
-
                     <div className={classes.content}>
-
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HRMS - Graduation
-                            Project</h1>
-
-                        <p className={classes.link} href="">Human Resource Management Solution</p>
-                        <p className={classes.list}>A Human Resource Management Solution developed in Microservices
-                            Architecture.
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HR Management System</h1>
+                        <p className={classes.link} href="" >Final Year University Project</p>
+                        <p className={classes.list}>Final Year Project – Microservices-Based Human Resource Management System (UET Peshawar)
                         </p>
-                        <li className={classes.list}>Skills : Frontend React JavaScript library · Java · Spring · Spring
-                            Boot · Spring Security · Spring Cloud API Gateway · Netflix Eureka · Netflix Hystrix ·
-                            Spring JPA · MySQL Database.
+                        <li className={classes.list}>Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix Eureka · Netflix Hystrix · Spring JPA · ReactJS · JavaScript · MySQL · Maven · Microservices Architecture
                         </li>
 
                     </div>
                     <div/>
                 </div>
             </div>
-
             {/*2nd Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
 
                 <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={ytImgU1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -331,22 +307,21 @@ const Project = () => {
                 </Carousel>
                 <div className={classes.pro}>
                     <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">YouTube Content
-                            Creator</h1>
-                        <a className={classes.link} href="https://www.youtube.com/c/FazalTuts4Uf">Fazal Tuts4U</a>
-                        <p className={classes.list}>Education and Tutorial Channel</p>
-                        <li className={classes.list}>Skills : YouTube · snappa.com · Adobe Premiere Pro cc · Videoscribe
-                            Animation · Techsmith CamtAsia · Techsmith Snagit
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">
+                            Content Creator / Mentor
+                        </h1>
+                        <a className={classes.link} href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q" target="_blank"
+                           rel="noreferrer">Fazal TechWorld</a>
+                        <p className={classes.list}>Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+ subscribers, primarily targeting beginners and aspiring tech learners</p>
+                        <li className={classes.list}>Technologies & Tools: YouTube · Adobe Premiere Pro cc · Videoscribe Animation · Techsmith CamtAsia · Techsmith Snagit · Canva · Snappa
                         </li>
 
                     </div>
                     <div/>
                 </div>
             </div>
-
             {/*1st Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -366,7 +341,6 @@ const Project = () => {
                         />
 
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -376,19 +350,27 @@ const Project = () => {
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={fazaleamaal4}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
                 <div className={classes.pro}>
                     <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Fazail E Amaal</h1>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Fazail e Amaal</h1>
                         <a className={classes.link}
-                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazal-E-Amaal</a>
-                        <p className={classes.list}>Fazail-E-Amaal Islamic Book Application.</p>
-                        <li className={classes.list}>Skills : Java · Android Studio · Android developer tools ·
-                            XML · SQLite
-                            Database
+                           target="_blank"
+                           rel="noreferrer"
+                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazail-e-Amaal</a>
+                        <p className={classes.list}>Fazail-e-Amaal Islamic Book App</p>
+                        <li className={classes.list}>Tech: Java · OOPs · Object Oriented Programming System · Android Studio · Android developer tools · XML · SQLite Database
                         </li>
                     </div>
                     <div/>

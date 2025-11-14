@@ -9,8 +9,6 @@
     margin-left: 4%;
     color: white;
     padding-top: 5%;
-
-
     text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
     font-size: 3rem;
 }
@@ -18,13 +16,10 @@
 .box {
     display: flex;
     justify-content: space-between;
-
     font-size: 1.8rem;
     margin-left: 7%;
     color: #01bf71;
     transition: all 200ms ease-in-out;
-
-
 }
 
 .box:hover {

@@ -7,7 +7,6 @@
     padding: 4rem 1rem 6rem;
 }
 
-/* ===== Project card wrapper ===== */
 .img {
     width: min(1100px, 96%);
     margin-inline: auto;
@@ -35,7 +34,6 @@
             0 0 35px rgba(1, 191, 113, 0.15);
 }
 
-/* ===== Text & links ===== */
 .head {
     color: #f5f5f5;
 }
@@ -67,7 +65,6 @@
     list-style: square inside;
 }
 
-/* ===== Text section ===== */
 .pro {
     margin-top: 0.75rem;
 }
@@ -99,7 +96,6 @@
     margin-top: 0.25rem;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 960px) {
     .fazal {
         padding: 3rem 0.75rem 5rem;
@@ -120,31 +116,26 @@
     }
 }
 
-/* Hide Bootstrap carousel captions (optional) */
 :global(.carousel-caption) {
     display: none;
 }
 
-
-/* ===== Carousel image styling ===== */
 .img img {
     display: block;
     width: 100%;
-    /* make height responsive but stable across slides */
     height: clamp(320px, 45vw, 480px);
-    object-fit: contain;       /* show full image, no crop */
+    object-fit: contain;
     object-position: center;
     border-radius: 14px;
-    background: #000;          /* letterbox/pillarbox fills */
+    background: #000;
     transition: transform 0.5s ease;
 }
 
 @media (max-width: 960px) {
     .img img {
-        /* smaller on mobile but still consistent */
         height: clamp(220px, 55vw, 320px);
         border-radius: 10px;
-        object-fit: contain;   /* keep full image on mobile too */
+        object-fit: contain;
         background: #000;
     }
 }
