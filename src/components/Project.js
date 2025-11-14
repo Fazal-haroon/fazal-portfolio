@@ -62,8 +62,12 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s ERP</h1>
                         <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
                            rel="noreferrer">AlmaERP</a>
-                        <p className={classes.list}>Develop and maintain Almabani’s HRMS ERP using Java Spring Boot, Angular, MySQL, and Jasper Reports, ensuring system reliability and performance</p>
-                        <li className={classes.list}>Tech: Java 11 · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · Web Development · TypeScript · JavaScript · Angular · MySQL · Jasper Reports · Git · Jira</li>
+                        <p className={classes.list}>
+                            Develop and maintain Almabani’s HRMS ERP using Java Spring Boot, Angular, MySQL, and Jasper Reports, ensuring system reliability and performance
+                        </p>
+                        <li className={classes.list}>
+                            Tech: Java 11 · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · Web Development · TypeScript · JavaScript · Angular · MySQL · Jasper Reports · Git · Jira
+                        </li>
                         <li className={classes.list}>
                             Security & Integration: Focused on reliability, performance, and comprehensive security across each layer of the system, ensuring safe integrations and consistent operation.
                         </li>
@@ -127,8 +131,12 @@ const Project = () => {
                     <div className={classes.content}>
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway</h1>
                         <p className={classes.link} href="">GlobalPay</p>
-                        <p className={classes.list}>Payment Gateway System – Monolithic Architecture - Full Stack: Angular (Frontend), Spring Boot (Backend)</p>
-                        <li className={classes.list}>Tech: Java 1.8 · Web Services · Web Development · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub · Jira</li>
+                        <p className={classes.list}>
+                            Payment Gateway System – Monolithic Architecture - Full Stack: Angular (Frontend), Spring Boot (Backend)
+                        </p>
+                        <li className={classes.list}>
+                            Tech: Java 1.8 · Web Services · Web Development · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub · Jira
+                        </li>
                     </div>
                     <div/>
                 </div>
@@ -136,7 +144,6 @@ const Project = () => {
 
             {/*5th Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -145,7 +152,6 @@ const Project = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -154,9 +160,7 @@ const Project = () => {
                             src={titalk2}
                             alt="Second slide"
                         />
-
                         <Carousel.Caption>
-
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -165,8 +169,12 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk (WeChat)</h1>
                         <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
                            rel="noreferrer">TiTalk</a>
-                        <p className={classes.list}>TiTalk Chat Application – Microservices Architecture - Backend: Spring Boot</p>
-                        <li className={classes.list}>Tech: Java 1.8 · IntelliJ IDEA · Web Services · Web Development · Spring Framework · Hibernate · MyBatis · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira · Zentao Project Management System</li>
+                        <p className={classes.list}>
+                            TiTalk Chat Application – Microservices Architecture - Backend: Spring Boot
+                        </p>
+                        <li className={classes.list}>
+                            Tech: Java 1.8 · IntelliJ IDEA · Web Services · Web Development · Spring Framework · Hibernate · MyBatis · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira · Zentao Project Management System
+                        </li>
                     </div>
                     <div/>
                 </div>
@@ -204,8 +212,12 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
                         <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
                            rel="noreferrer">Tiger</a>
-                        <p className={classes.list}>A web-based laboratory management system for a U.S.-based healthcare company, streamlining the management of test cases and results</p>
-                        <li className={classes.list}>Tech: Java 1.8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins CI/CD · Jira · Mirth Connect · Linux</li>
+                        <p className={classes.list}>
+                            A web-based laboratory management system for a U.S.-based healthcare company, streamlining the management of test cases and results
+                        </p>
+                        <li className={classes.list}>
+                            Tech: Java 1.8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins CI/CD · Jira · Mirth Connect · Linux
+                        </li>
                     </div>
                     <div/>
                 </div>
@@ -250,18 +262,18 @@ const Project = () => {
                     <div className={classes.content}>
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HR Management System</h1>
                         <p className={classes.link} href="" >Final Year University Project</p>
-                        <p className={classes.list}>Final Year Project – Microservices-Based Human Resource Management System (UET Peshawar)
+                        <p className={classes.list}>
+                            Final Year Project – Microservices-Based Human Resource Management System (UET Peshawar)
                         </p>
-                        <li className={classes.list}>Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix Eureka · Netflix Hystrix · Spring JPA · ReactJS · JavaScript · MySQL · Maven · Microservices Architecture
+                        <li className={classes.list}>
+                            Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix Eureka · Netflix Hystrix · Spring JPA · ReactJS · JavaScript · MySQL · Maven · Microservices Architecture
                         </li>
-
                     </div>
                     <div/>
                 </div>
             </div>
             {/*2nd Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
-
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -312,10 +324,12 @@ const Project = () => {
                         </h1>
                         <a className={classes.link} href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q" target="_blank"
                            rel="noreferrer">Fazal TechWorld</a>
-                        <p className={classes.list}>Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+ subscribers, primarily targeting beginners and aspiring tech learners</p>
-                        <li className={classes.list}>Technologies & Tools: YouTube · Adobe Premiere Pro cc · Videoscribe Animation · Techsmith CamtAsia · Techsmith Snagit · Canva · Snappa
+                        <p className={classes.list}>
+                            Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+ subscribers, primarily targeting beginners and aspiring tech learners
+                        </p>
+                        <li className={classes.list}>
+                            Technologies & Tools: YouTube · Adobe Premiere Pro cc · Videoscribe Animation · Techsmith CamtAsia · Techsmith Snagit · Canva · Snappa
                         </li>
-
                     </div>
                     <div/>
                 </div>
@@ -369,8 +383,11 @@ const Project = () => {
                            target="_blank"
                            rel="noreferrer"
                            href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazail-e-Amaal</a>
-                        <p className={classes.list}>Fazail-e-Amaal Islamic Book App</p>
-                        <li className={classes.list}>Tech: Java · OOPs · Object Oriented Programming System · Android Studio · Android developer tools · XML · SQLite Database
+                        <p className={classes.list}>
+                            Fazail-e-Amaal Islamic Book App
+                        </p>
+                        <li className={classes.list}>
+                            Tech: Java · OOPs · Object Oriented Programming System · Android Studio · Android developer tools · XML · SQLite Database
                         </li>
                     </div>
                     <div/>
@@ -378,7 +395,6 @@ const Project = () => {
             </div>
         </div>
     </>;
-
 };
 
 export default Project;
