@@ -63,10 +63,10 @@ const Project = () => {
                         <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
                            rel="noreferrer">AlmaERP</a>
                         <p className={classes.list}>
-                            Develop and maintain Almabani’s HRMS ERP using Java Spring Boot, Angular, MySQL, and Jasper Reports, ensuring system reliability and performance
+                            Developed and maintained Almabani’s HRMS ERP, delivering high reliability and strong performance.
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 11 · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · Web Development · TypeScript · JavaScript · Angular · MySQL · Jasper Reports · Git · Jira
+                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL · JasperReports · Git · Jira
                         </li>
                         <li className={classes.list}>
                             Security & Integration: Focused on reliability, performance, and comprehensive security across each layer of the system, ensuring safe integrations and consistent operation.
@@ -132,10 +132,10 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway</h1>
                         <p className={classes.link} href="">GlobalPay</p>
                         <p className={classes.list}>
-                            Payment Gateway System – Monolithic Architecture - Full Stack: Angular (Frontend), Spring Boot (Backend)
+                            Payment gateway system — monolithic architecture; full-stack delivery with Angular (frontend) and Spring Boot (backend).
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 1.8 · Web Services · Web Development · Spring Framework · Hibernate · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub · Jira
+                            Tech: Java 8 · RESTful Web Services · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub · Jira
                         </li>
                     </div>
                     <div/>
@@ -170,10 +170,10 @@ const Project = () => {
                         <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
                            rel="noreferrer">TiTalk</a>
                         <p className={classes.list}>
-                            TiTalk Chat Application – Microservices Architecture - Backend: Spring Boot
+                            Chat application — microservices architecture; backend services built for scalable, real-time messaging.
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 1.8 · IntelliJ IDEA · Web Services · Web Development · Spring Framework · Hibernate · MyBatis · Swagger API · Lombok · Spring · Spring Boot · JWT · JAWT · Maven · TypeScript · JavaScript · Angular · Oracle · MySQL · GitHub · Jira · Zentao Project Management System
+                            Tech: Java 8 · IntelliJ IDEA · RESTful Web Services · Spring Framework · MyBatis · OpenAPI/Swagger · Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular · Oracle · MySQL · Git · Jira · ZenTao Project Management System
                         </li>
                     </div>
                     <div/>
@@ -213,10 +213,10 @@ const Project = () => {
                         <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
                            rel="noreferrer">Tiger</a>
                         <p className={classes.list}>
-                            A web-based laboratory management system for a U.S.-based healthcare company, streamlining the management of test cases and results
+                            Web-based laboratory management system for a U.S. healthcare organization, streamlining test case and results workflows.
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 1.8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins CI/CD · Jira · Mirth Connect · Linux
+                            Tech: Java 8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins (CI/CD) · Jira · Mirth Connect · Linux
                         </li>
                     </div>
                     <div/>
@@ -263,10 +263,10 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HR Management System</h1>
                         <p className={classes.link} href="" >Final Year University Project</p>
                         <p className={classes.list}>
-                            Final Year Project – Microservices-Based Human Resource Management System (UET Peshawar)
+                            Final Year Project — microservices-based Human Resource Management System (UET Peshawar).
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix Eureka · Netflix Hystrix · Spring JPA · ReactJS · JavaScript · MySQL · Maven · Microservices Architecture
+                            Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix Eureka · Netflix Hystrix · Spring Data JPA · React · JavaScript · MySQL · Maven · Microservices Architecture
                         </li>
                     </div>
                     <div/>
@@ -328,7 +328,7 @@ const Project = () => {
                             Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+ subscribers, primarily targeting beginners and aspiring tech learners
                         </p>
                         <li className={classes.list}>
-                            Technologies & Tools: YouTube · Adobe Premiere Pro cc · Videoscribe Animation · Techsmith CamtAsia · Techsmith Snagit · Canva · Snappa
+                            Technologies & Tools: YouTube · Adobe Premiere Pro · VideoScribe · Camtasia · Snagit · Canva · Snappa
                         </li>
                     </div>
                     <div/>
@@ -384,10 +384,10 @@ const Project = () => {
                            rel="noreferrer"
                            href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazail-e-Amaal</a>
                         <p className={classes.list}>
-                            Fazail-e-Amaal Islamic Book App
+                            Fazail-e-Amaal Islamic Book App.
                         </p>
                         <li className={classes.list}>
-                            Tech: Java · OOPs · Object Oriented Programming System · Android Studio · Android developer tools · XML · SQLite Database
+                            Tech: Java · OOP · Android Studio · Android SDK · XML · SQLite
                         </li>
                     </div>
                     <div/>
