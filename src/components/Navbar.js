@@ -15,7 +15,7 @@ const Navbar = () => {
             <h2 className={classes.resume}>
 
                 <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://drive.google.com/file/d/1-eiPloBVFrWqXDAj28gYUpUVkBvwOxee/view?usp=sharing'>RESUME</a>
+                   href='https://drive.google.com/file/d/1-eiPloBVFrWqXDAj28gYUpUVkBvwOxee/view?usp=sharing' target="_blank" rel="noreferrer">RESUME</a>
             </h2>
 
             <ul className={clicked ? classes.mobilelinks : classes.navlinks} onClick={() => setClicked(false)}>

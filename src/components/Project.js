@@ -2,6 +2,13 @@ import React, {useEffect} from 'react';
 import classes from '../assets/css/Project.module.css'
 import almaerp from "../assets/images/almaerp.png"
 import almaerp1 from "../assets/images/almaerp1.png"
+import vendor1 from "../assets/images/vendor1.png"
+import vendor2 from "../assets/images/vendor2.png"
+import vendor3 from "../assets/images/vendor3.png"
+import lending1 from "../assets/images/lending1.png"
+import lending2 from "../assets/images/lending2.png"
+import lending3 from "../assets/images/lending3.png"
+import lending4 from "../assets/images/lending4.png"
 import globalpay1 from "../assets/images/globalpay1.png"
 import globalpay2 from "../assets/images/globalpay2.png"
 import globalpay3 from "../assets/images/globalpay3.png"
@@ -32,6 +39,134 @@ const Project = () => {
     }, []);
     return <>
         <div className={classes.fazal}>
+
+            {/*8th Project*/}
+            <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={lending1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={lending2}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={lending3}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={lending4}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Lending Website</h1>
+                        <a className={classes.link} href="https://almabani.com/" target="_blank"
+                           rel="noreferrer">AlmaWebsite</a>
+                        <p className={classes.list}>
+                            Developed and maintained Almabani’s website with a dynamic, CMS-driven
+                            frontend, delivering an up-to-date and engaging experience for visitors.
+                        </p>
+
+                        <li className={classes.list}>
+                            Implemented a REST API–based architecture with a Laravel backend and
+                            Angular frontend, enabling fully dynamic pages and content management
+                            backed by MySQL.
+                        </li>
+
+                        <li className={classes.list}>
+                            Tech: PHP · Laravel · Angular · REST APIs · MySQL · Git · Jira · WebStorm · PhpStorm
+                        </li>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+
+            {/*8th Project*/}
+            <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={vendor1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={vendor2}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={vendor3}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Vendor Portal</h1>
+                        <div className={classes.linksRow}>
+                            <a className={classes.link} href="https://supregistration.almabani.com/" target="_blank" rel="noreferrer">
+                                Vendor Portal
+                            </a>
+                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+                            <a className={classes.link} href="https://drive.google.com/file/d/1XWYFlvQk77UUok1aCwbgbppsXzecgdyc/view?usp=sharing" target="_blank" rel="noreferrer">
+                                User Manual
+                            </a>
+                        </div>
+                        <p className={classes.list}>
+                            Built the Supplier/Vendor Portal from scratch, enabling seamless supplier onboarding and communication.
+                        </p>
+                        <li className={classes.list}>
+                            Enhanced procurement workflows including PR, RFQ, Quotations, CBT — Bid Comparison, and PO management.
+                        </li>
+                        <li className={classes.list}>
+                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL · JasperReports · Git · Jira
+                        </li>
+                    </div>
+                    <div/>
+                </div>
+            </div>
 
             {/*7th Project*/}
             <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
@@ -66,10 +201,10 @@ const Project = () => {
                             Developed and maintained Almabani’s HRMS ERP, delivering high reliability and strong performance.
                         </p>
                         <li className={classes.list}>
-                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL · JasperReports · Git · Jira
+                            Security & Integration: Focused on reliability, performance, and comprehensive security across each layer of the system, ensuring safe integrations and consistent operation.
                         </li>
                         <li className={classes.list}>
-                            Security & Integration: Focused on reliability, performance, and comprehensive security across each layer of the system, ensuring safe integrations and consistent operation.
+                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot · Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL · JasperReports · Git · Jira
                         </li>
                     </div>
                     <div/>
