@@ -5,10 +5,15 @@ import almaerp1 from "../assets/images/almaerp1.png"
 import vendor1 from "../assets/images/vendor1.png"
 import vendor2 from "../assets/images/vendor2.png"
 import vendor3 from "../assets/images/vendor3.png"
+import vendor4 from "../assets/images/vendor4.png"
 import lending1 from "../assets/images/lending1.png"
 import lending2 from "../assets/images/lending2.png"
 import lending3 from "../assets/images/lending3.png"
 import lending4 from "../assets/images/lending4.png"
+import mob1 from "../assets/images/almamoba.png"
+import mob2 from "../assets/images/almamoba2.png"
+import mob3 from "../assets/images/almamobd.png"
+import mob4 from "../assets/images/almamobd2.png"
 import globalpay1 from "../assets/images/globalpay1.png"
 import globalpay2 from "../assets/images/globalpay2.png"
 import globalpay3 from "../assets/images/globalpay3.png"
@@ -32,6 +37,8 @@ import hrmsImg3 from "../assets/images/hrms3.jpeg"
 import Carousel from 'react-bootstrap/Carousel';
 import "aos/dist/aos.css"
 import Aos from "aos"
+import { FaApple, FaAndroid } from "react-icons/fa";
+
 
 const Project = () => {
     useEffect(() => {
@@ -40,7 +47,79 @@ const Project = () => {
     return <>
         <div className={classes.fazal}>
 
-            {/*8th Project*/}
+            {/*10th Project*/}
+            <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
+                <Carousel fade>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={mob1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={mob2}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={mob3}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={mob4}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <div className={classes.pro}>
+                    <div className={classes.content}>
+                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Mobile</h1>
+                        <div className={classes.linksRow}>
+                            <a
+                                className={classes.link}
+                                href="https://apps.apple.com/sa/app/almamob/id6475034380"
+                                target="_blank"
+                                rel="noreferrer"
+                            >AlmaMOB <FaApple className={classes.storeIcon} /></a>
+                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+                            <a
+                                className={classes.link}
+                                href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
+                                target="_blank"
+                                rel="noreferrer"
+                            >AlmaMOB <FaAndroid className={classes.storeIcon} /></a>
+                        </div>
+                        <p className={classes.list}>
+                            Developed and maintained Almabani’s AlmaMOB, contributing to both frontend and backend development to deliver a smooth, responsive, and user-friendly experience.                        </p>
+                        <li className={classes.list}>
+                            Tech: AlmaErp Backend · Mobile Application Development · Ionic Framework · Angular · REST APIs · WebStorm · MySQL · Xcode · Git · Jira
+                        </li>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+
+            {/*9th Project*/}
             <div className={`${classes.img} ${classes.section}` } style={{marginTop: "00rem"}}>
                 <Carousel fade>
                     <Carousel.Item>
@@ -135,6 +214,16 @@ const Project = () => {
                         <img
                             className="d-block w-100"
                             src={vendor3}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={vendor4}
                             alt="First slide"
                         />
                         <Carousel.Caption>

@@ -144,3 +144,9 @@
     transform: scale(1.02);
 }
 
+.storeIcon {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 1.1em;
+    vertical-align: middle;
+}

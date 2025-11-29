@@ -1,12 +1,30 @@
-import React from 'react';
 import classes from '../assets/css/Home.module.css'
 import Typewriter from "typewriter-effect"
 import {FiMail} from "react-icons/fi";
 import fazal from "../assets/images/fazal.png"
+import React from "react";
+import Swal from "sweetalert2";
 
-import {FaGithub, FaLinkedin, FaStackOverflow, FaTwitter, FaYoutube} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaStackOverflow, FaYoutube} from "react-icons/fa";
 
 const Home = () => {
+
+    const handleCopyEmail = () => {
+        const email = "fazal.haroon01@gmail.com";
+
+        navigator.clipboard.writeText(email);
+
+        Swal.fire({
+            title: `${email}`,
+            text: `Email Copied! — paste it into your mail app to contact me.`,
+            icon: "success",
+            confirmButtonColor: "#01bf71",
+            timer: 2200,
+            timerProgressBar: true,
+        });
+    };
+
+
     return <div className={classes.fazal}>
 
         <img src={fazal} alt="Avatar" className={classes.img}>
@@ -16,34 +34,47 @@ const Home = () => {
 
             <h1 className={classes.head}>Hi, I'm Fazal Haroon.</h1>
 
-            <p1 className={classes.heading}><Typewriter
-                options={{
-                    autoStart: true
-                    , loop: false,
-                    delay: 50,
-                    strings:
+            <p className={classes.subhead}>
+                <Typewriter
+                    options={{
+                        strings: [
+                            "Software Engineer",
+                            "Full-Stack Developer",
+                            "Problem Solver",
+                            "Mobile App Developer"
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        delay: 35,
+                        deleteSpeed: 20
+                    }}
+                />
+            </p>
 
-                        " I'm a curious young man that loves to learn something new every day. I'm new in the tech world jobs, but with such a big goal of becoming an IT expert."
+            <p className={classes.about}>
+                Passionate about creating meaningful digital experiences and continuously learning and improving. </p>
 
-                }}>
-
-
-            </Typewriter></p1>
 
             <div className={classes.icon}>
+                <span onClick={handleCopyEmail} className={classes.copyMail}>
+  <FiMail/>
+</span>
 
-                <a style={{color: 'inherit', textDecoration: 'inherit'}} href="kharoon187@gmail.com"><FiMail/></a>
-                <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://github.com/Fazal-haroon'><FaGithub/></a>
-                <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://stackoverflow.com/users/9947525/fazal-haroon'><FaStackOverflow/></a>
-                <a style={{color: 'inherit', textDecoration: 'inherit'}}
+                <a target="_blank"
+                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
                    href='https://www.linkedin.com/in/fazalharoon/'><FaLinkedin/></a>
-                <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://www.youtube.com/c/fazaltuts4uf'><FaYoutube/></a>
-                <a style={{color: 'inherit', textDecoration: 'inherit'}}
-                   href='https://twitter.com/FazalHaroon4'><FaTwitter/></a>
-
+                <a target="_blank"
+                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   href='https://github.com/Fazal-haroon'><FaGithub/></a>
+                <a target="_blank"
+                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   href='https://stackoverflow.com/users/9947525/fazal-haroon'><FaStackOverflow/></a>
+                <a target="_blank"
+                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q"><FaYoutube/></a>
+                {/*<a target="_blank"*/}
+                {/*   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}*/}
+                {/*   href='https://twitter.com/FazalHaroon4'><FaTwitter/></a>*/}
             </div>
 
         </div>

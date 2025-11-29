@@ -60,3 +60,38 @@
     }
 
 }
+
+.subhead {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #01bf71;
+    margin-bottom: 1rem;
+}
+
+.about {
+    font-size: 1.2rem;
+    color: #e6e6e6;
+    width: 90%;
+    line-height: 1.6;
+}
+
+.copyMail {
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    color: #01bf71;
+    animation: fadeInOut 1.5s ease forwards;
+    white-space: nowrap;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
