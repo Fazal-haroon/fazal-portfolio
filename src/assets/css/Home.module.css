@@ -14,28 +14,23 @@
     height: 300px;
     width: 300px;
     display: block;
-
 }
 
 .heading {
-
     color: #fff;
     font-size: larger;
     width: 50%;
 }
 
 .head {
-
     color: #01bf71;
-
-
 }
 
 .icon {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-top: 8%;
+    margin-top: 2%;
     width: 25%;
     cursor: pointer;
     color: #01bf71;
@@ -48,17 +43,14 @@
     }
 
     .icon {
-
         position: static;
         width: 50%;
-        margin-top: 10%;
-
+        margin-top: 6%;
     }
 
     .fazal {
         padding-bottom: 100%;
     }
-
 }
 
 .subhead {

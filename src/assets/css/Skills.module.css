@@ -1,16 +1,16 @@
 .fazal {
-    background-color: black;
-    height: 1200px;
-
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 4rem 1rem 4rem;
 }
 
 .skills {
-    background-color: black;
     margin-left: 4%;
-    color: white;
-    padding-top: 5%;
+    color: #fff;
+    padding-top: 1rem;
     text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .box {
@@ -19,53 +19,93 @@
     font-size: 1.8rem;
     margin-left: 7%;
     color: #01bf71;
+    gap: 0.2rem;
     transition: all 200ms ease-in-out;
 }
 
-.box:hover {
-    transform: scale(1.5);
-    font-weight: 400;
-
-}
-
+.box:hover,
 .box:active {
-    transform: scale(1.5);
+    transform: scale(1.05);
     font-weight: 400;
 }
 
 .tech {
-
     display: flex;
     flex-wrap: wrap;
-    height: 19%;
     width: 90%;
-
+    margin: 2rem auto 0;
     justify-content: space-evenly;
+}
 
+.skillsTitle {
+    margin-left: 4%;
+    margin-bottom: 0.25rem;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+/* Subtitle under main title */
+.subText {
+    margin-left: 4%;
+    margin-top: 0.1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+    color: #b3b3b3;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* Section titles: "Frontend", "Backend", "Deployment", "Tools & Platforms" */
+.sectionTitle {
+    margin-left: 4%;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 960px) {
-
-    .tech {
-
-        flex-wrap: wrap;
-        height: 10%;
-        width: 90%;
-
-
+    .fazal {
+        padding: 3rem 1rem 5rem;
     }
 
     .skills {
-        padding-top: 10%;
-    }
-
-    .fazal {
-        height: 100%;
+        padding-top: 2rem;
+        margin-left: 6%;
+        font-size: 2.2rem;
     }
 
     .box {
         font-size: 1.3rem;
         padding: 4%;
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
     }
 
+    .tech {
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+
+    .skillsTitle {
+        font-size: 2rem;
+        margin-left: 6%;
+    }
+
+    .subText {
+        font-size: 0.95rem;
+        margin-left: 6%;
+        margin-bottom: 2rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.6rem;
+        margin-left: 6%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
+
