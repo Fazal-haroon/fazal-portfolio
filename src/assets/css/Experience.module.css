@@ -1,42 +1,155 @@
+/* Page wrapper */
 .fazal {
-    height: 100%;
-    background-color: black;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 4rem 1rem 4rem;
+}
+
+/* Generic section wrapper (Education / Experience) */
+.section {
+    width: min(1100px, 96%);
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+/* Section titles: "Education", "Experience" */
+.sectionTitle {
+    font-size: clamp(1.9rem, 4vw, 2.4rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* ===== Education ===== */
+
+.eduBlock {
+    background: #0d0d0d;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+}
+
+.eduItem {
+    margin-bottom: 1.25rem;
+}
+
+.eduDegree {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.eduInstitute {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #01bf71;
+    margin-bottom: 0.15rem;
+}
+
+.eduYear {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* ===== Experience ===== */
+
+.cardsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.card {
+    background: #0d0d0d;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1.5rem 2rem 1.8rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+}
+
+.company {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.role {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #01bf71;
+    margin-bottom: 0.15rem;
+}
+
+.dates {
+    font-size: 0.98rem;
+    color: #d0d0d0;
+    margin-bottom: 0.9rem;
+}
+
+.summary {
+    font-size: 1.05rem;
+    color: #01bf71;
+    margin-bottom: 0.8rem;
+}
+
+.summary span {
     color: #fff;
 }
 
-.Education {
-    background-color: black;
-    margin-left: 4%;
-    color: white;
-    text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-    font-size: 2.0rem;
-    font-weight: 600;
-    text-align: left;
+/* Bullets & text inside card */
+.cardList {
+    margin: 0.25rem 0 0.25rem 1.1rem;
+    padding: 0;
+    list-style: disc;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    color: #01bf71;
 }
 
-.experience {
-    background-color: black;
-    margin-left: 4%;
-    color: white;
-    text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-    font-size: 2.0rem;
-    font-weight: 600;
-    padding-top: 1%;
-    text-align: left;
+.cardList li {
+    margin-bottom: 0.25rem;
 }
 
+.techLine {
+    margin-top: 0.75rem;
+    font-size: 0.98rem;
+    color: #01bf71;
+    line-height: 1.5;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.98rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
 @media screen and (max-width: 960px) {
-    .experience {
-        padding-top: 5%;
-        text-indent: -6%;
-        padding-left: 1%;
-        font-weight: 500;
+
+    .fazal {
+        padding: 3rem 0.75rem 4.5rem;
     }
 
-    .Education {
-        font-weight: 500;
-        padding-top: 7%;
+    .card,
+    .eduBlock {
+        padding: 1.25rem 1.25rem 1.5rem;
     }
 
+    .company {
+        font-size: 1.35rem;
+    }
+
+    .role {
+        font-size: 1.15rem;
+    }
+
+    .summary,
+    .cardList,
+    .techLine {
+        font-size: 0.95rem;
+    }
 }
-

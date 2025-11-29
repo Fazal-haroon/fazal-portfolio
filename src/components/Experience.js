@@ -1,272 +1,369 @@
-import React from 'react'
-import classes from '../assets/css/Experience.module.css'
-import {useEffect} from 'react';
-import "aos/dist/aos.css"
-import Aos from "aos"
-
+import React, { useEffect } from 'react';
+import classes from '../assets/css/Experience.module.css';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 const Experience = () => {
     useEffect(() => {
-        Aos.init({duration: 1000});
+        Aos.init({ duration: 1000 });
     }, []);
+
     return (
         <div className={classes.fazal}>
 
-            <div>
+            {/* ===== Education ===== */}
+            <section className={classes.section}>
+                <h2
+                    className={classes.sectionTitle}
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                >
+                    Education
+                </h2>
 
-                {/*Education*/}
+                <div className={classes.eduBlock} data-aos="fade-up" data-aos-once="true">
+                    <div className={classes.eduItem}>
+                        <p className={classes.eduDegree}>
+                            Bachelor&apos;s degree, Computer Science, Grade: 83.75%
+                        </p>
+                        <p className={classes.eduInstitute}>
+                            University of Engineering &amp; Technology Peshawar
+                        </p>
+                        <p className={classes.eduYear}>Sep 2017 – Aug 2021</p>
+                    </div>
 
-                <div className={classes.Education}>
-
-                    <h1 className={classes.Education} data-aos-once="true" data-aos="zoom-in">Education :</h1>
-
-                    <h1 className={classes.Education} style={{fontSize: "1.3rem"}}>Bachelor's degree, Computer
-                        Science</h1>
-
-                    <h1 className={classes.Education} style={{fontSize: "1.5rem", color: "#01bf71"}}>University of
-                        Engineering & Technology Peshawar</h1>
-
-                    <h1 className={classes.Education}
-                        style={{fontSize: "1.3rem", color: "#fff", marginBottom: "1.5%"}}>2017-2021</h1>
-                    <h1 className={classes.Education} style={{fontSize: "1.3rem"}}>Diploma of Information
-                        Technology</h1>
-
-                    <h1 className={classes.Education} style={{fontSize: "1.5rem", color: "#01bf71"}}>Khyber Pakhtunkhwa
-                        Board of Technical Education Peshawar</h1>
-
-                    <h1 className={classes.Education} style={{fontSize: "1.3rem", color: "#fff"}}>2015-2016</h1>
+                    <div className={classes.eduItem}>
+                        <p className={classes.eduDegree}>Diploma of Information Technology, Grade: 80.57%</p>
+                        <p className={classes.eduInstitute}>
+                            KP Board of Technical Education Peshawar
+                        </p>
+                        <p className={classes.eduYear}>2015 – 2016</p>
+                    </div>
                 </div>
+            </section>
 
+            {/* ===== Experience ===== */}
+            <section className={classes.section}>
+                <h2
+                    className={classes.sectionTitle}
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                >
+                    Experience
+                </h2>
 
-                <div className={classes.experience}>
+                <div className={classes.cardsColumn}>
 
-                    <h1 className={classes.experience} style={{marginTop: "2%"}} data-aos-once="true"
-                        data-aos="zoom-in">Experience :</h1>
+                    {/* Million Soft Technology */}
+                    <article
+                        className={classes.card}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                    >
+                        <h3 className={classes.company}>Million Soft Technology</h3>
+                        <h4 className={classes.role}>Java Developer</h4>
+                        <p className={classes.dates}>Jul 2022 – Jun 2023</p>
 
-                    <h1 className={classes.experience} style={{fontSize: "1.8rem"}}>Million Soft Technology</h1>
+                        <p className={classes.summary}>
+                            Worked on Chat Application and Payment Gateway as backend
+                            <span> Java</span> developer.
+                        </p>
 
-                    <h1 className={classes.experience} style={{fontSize: "1.5rem", color: "#01bf71"}}>Java
-                        Developer</h1>
+                        <ul className={classes.cardList}>
+                            <li>
+                                Chat Application developed in
+                                <span> Microservices</span> architecture.
+                            </li>
+                            <li>
+                                Payment Gateway system developed in
+                                <span> Monolithic</span> architecture.
+                            </li>
+                        </ul>
 
-                    <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Jul 2022 -
-                        June 2023</h1>
+                        <p className={classes.summary}>Documentation:</p>
+                        <ul className={classes.cardList}>
+                            <li>
+                                Preparing API Technical Design document – clarifying all
+                                technical details before development.
+                            </li>
+                            <li>
+                                Preparing Technical Flow document – describing system flow
+                                diagrammatically.
+                            </li>
+                            <li>
+                                Preparing Traceability Matrix document – supporting API
+                                integrations and integration team understanding.
+                            </li>
+                            <li>
+                                Preparing Technical Design document – user guide after UI
+                                development.
+                            </li>
+                        </ul>
 
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on Chat Application and Payment Gateway as Backend <span style={{color: "#fff"}}>Java</span> Developer.</p>
+                        <p className={classes.summary}>Responsibilities:</p>
+                        <ul className={classes.cardList}>
+                            <li>
+                                Analyzing and gathering business requirements and writing
+                                system specification documents with UI/UX elements.
+                            </li>
+                            <li>
+                                Designing solutions and integrating them with existing
+                                systems, including required DB and code changes.
+                            </li>
+                            <li>
+                                Full-stack development (Angular &amp; Spring Boot),
+                                maintenance, and support of running applications.
+                            </li>
+                            <li>
+                                Optimizing Java code, monitoring application performance,
+                                and debugging error logs.
+                            </li>
+                            <li>
+                                Ensuring code quality and adherence to coding standards.
+                            </li>
+                            <li>
+                                Ensuring timely delivery of assigned tasks, production
+                                deployments, and post-production support.
+                            </li>
+                        </ul>
 
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Chat Application
-                        developed in<span style={{color: "#fff"}}> Microservices</span> Architecture.
-                    </li>
+                        <p className={classes.techLine}>
+                            Technologies: Java 1.8 · IntelliJ IDEA · Web Services · Web
+                            Development · Spring Framework · Hibernate · MyBatis · Swagger
+                            API · Lombok · Spring · Spring Boot · Maven · TypeScript ·
+                            JavaScript · Angular · Oracle · MySQL · GitHub · Jira · Zentao
+                            Project Management System
+                        </p>
 
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Payment Gateway
-                        system developed in<span style={{color: "#fff"}}> Monolithic</span> Architecture.
-                    </li>
+                        <a
+                            className={classes.link}
+                            href="https://ltsql.ql-lts888666.com/login"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            TiTalk
+                        </a>
+                    </article>
 
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Documents the
-                        following
-                    </li>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Preparing API Technical Design document - Before development a document for clearing all things
-                        technically.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Preparing Technical Flow document - Understanding how our system will work diagrammatically.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Preparing Traceability Matrix Document - API Integration for integration team understanding.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Preparing Technical Design document - After UI Development user guide document.
-                    </ul>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Development the
-                        following
-                    </li>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Analyzing, and gathering the business requirements from the different stockholders and writing
-                        the system specification document with the UI/UX elements.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Design the expected solution and how to plug it with the current running system including the
-                        required DB and code changes.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Responsible for the full-stack development(Angular and Spring boot), maintenance, and support of
-                        the running applications.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Optimize the Java code across all modules and monitor the application performance and debug
-                        error logs.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Ensure the code quality and code standards are being followed.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Ensure timely delivery of the tasks assigned to the resources.
-                    </ul>
-                    <ul className={classes.experience} style={{fontSize: "1.0rem", color: "#01bf71"}}>
-                        Production deployments and post-production support.
-                    </ul>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Technologies :
-                        Java 1.8 · IntelliJ IDEA · Web Services · Web Development · Spring Framework · Hibernate ·
-                        MyBatis · Swagger API <br></br>· Lombok · Spring · Spring Boot · Maven · TypeScript · JavaScript
-                        ·
-                        Angular · Oracle · MySQL · GitHub · Jira · Zentao Project Management System
-                    </li>
+                    {/* siParadigm – Java Developer */}
+                    <article
+                        className={classes.card}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                    >
+                        <h3 className={classes.company}>siParadigm Diagnostic Informatics</h3>
+                        <h4 className={classes.role}>Java Developer</h4>
+                        <p className={classes.dates}>Oct 2021 – Sep 2022</p>
 
-                    <a className={classes.experience} style={{fontSize: "1.1rem", color: "#fff",}}
-                       href="https://ltsql.ql-lts888666.com/login">TiTalk</a>
+                        <p className={classes.summary}>
+                            Worked on healthcare software as backend
+                            <span> Java</span> developer.
+                        </p>
+
+                        <ul className={classes.cardList}>
+                            <li>
+                                Knowledge transfer / transition and handover through formal
+                                documentation (Jul 2022 – Sep 2022).
+                            </li>
+                            <li>Worked on Java and J2EE.</li>
+                            <li>
+                                Hands-on experience with Tomcat and WildFly/JBoss servers.
+                            </li>
+                            <li>
+                                Used JSF and PrimeFaces to build registration processes.
+                            </li>
+                            <li>Experience creating RESTful web services.</li>
+                            <li>
+                                1+ years of experience in web development using Core Java,
+                                JavaEE, Spring Framework, JSP, JSF, Servlet, Spring MVC,
+                                Spring Security, JDBC, Hibernate, Microservices, Spring Boot,
+                                Spring JPA, JasperReports.
+                            </li>
+                            <li>
+                                Strong ability to learn new technologies quickly and work
+                                independently.
+                            </li>
+                        </ul>
+
+                        <p className={classes.techLine}>
+                            Technologies: Java 1.8 · EJB · JSF · Primefaces · Hibernate ·
+                            Spring Boot · MariaDB
+                        </p>
+
+                        <a
+                            className={classes.link}
+                            href="https://tiger.siparadigm.com/tiger/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Tiger
+                        </a>
+                    </article>
+
+                    {/* siParadigm – DevOps / Support */}
+                    <article
+                        className={classes.card}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                    >
+                        <h3 className={classes.company}>siParadigm Diagnostic Informatics</h3>
+                        <h4 className={classes.role}>
+                            <span style={{ color: "#ffffff" }}>DevOps | Support Engineer</span> — <span style={{ color: "#ffffff" }}>Full-time</span>
+                        </h4>
+                        <p className={classes.dates}>Aug 2021 – Oct 2021</p>
+
+                        <p className={classes.summary}>
+                            Support Engineer / DevOps (Training Role) – Healthcare Software
+                        </p>
+                        <p className={classes.summary}>
+                            3 Months – Training &amp; Support Assignment
+                        </p>
+
+                        <ul className={classes.cardList}>
+                            <li>
+                                Assisted in supporting the healthcare application under the guidance of senior engineers.
+                            </li>
+                            <li>
+                                Documented issues, tracked bugs, and communicated resolutions to the team.
+                            </li>
+                            <li>
+                                Learned and practiced basic Jira (Agile) workflow, Docker, and Jenkins for CI/CD tasks.
+                            </li>
+                            <li>
+                                Retrieved data for client requests and supported day-to-day system operations.
+                            </li>
+                            <li>
+                                Used Mirth Connect to understand HL7 messaging and HIPAA compliance.
+                            </li>
+                            <li>
+                                Monitored Linux servers and assisted in deployments using MobaXterm (with senior supervision).
+                            </li>
+                        </ul>
+
+                        <p className={classes.techLine}>
+                            Tech: SQL · MariaDB · Jenkins (CI/CD) · Jira · Mirth Connect · Linux
+                        </p>
+
+                        <a
+                            className={classes.link}
+                            href="https://tiger.siparadigm.com/tiger/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Tiger
+                        </a>
+                    </article>
+
+                    {/* Satsuma Droid – Junior Java */}
+                    <article
+                        className={classes.card}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                    >
+                        <h3 className={classes.company}>Satsuma Droid Pvt. Ltd</h3>
+                        <h4 className={classes.role}>
+                            <span style={{ color: "#ffffff" }}>Junior Java Developer</span> — <span style={{ color: "#ffffff" }}>Part-time</span>
+                        </h4>
+                        <p className={classes.dates}>Oct 2020 – Aug 2021</p>
+
+                        <p className={classes.summary}>
+                            Final Year <span style={{ color: "#ffffff" }}>University Project</span> –
+                            <span style={{ color: "#ffffff" }}> Microservices-Based HR Management System</span> (UET Peshawar)
+                        </p>
+
+                        <ul className={classes.cardList}>
+                            <li>
+                                Developed backend microservices using
+                                <span style={{ color: "#ffffff" }}> Java 8</span>,
+                                <span style={{ color: "#ffffff" }}> Spring Boot</span>, and a frontend with
+                                <span style={{ color: "#ffffff" }}> ReactJS</span>.
+                            </li>
+                            <li>
+                                Delivered a role-based access HRMS using
+                                <span style={{ color: "#ffffff" }}> microservices architecture</span>, successfully implementing and integrating major modules for a working system.
+                            </li>
+                            <li>
+                                Received weekly reviews under
+                                <span style={{ color: "#ffffff" }}> Senior Supervision</span> to track progress and uphold real-world standards.
+                            </li>
+                            <li>
+                                Included <span style={{ color: "#ffffff" }}>HR</span>, <span style={{ color: "#ffffff" }}>Employee</span>,
+                                <span style={{ color: "#ffffff" }}> Finance</span>, <span style={{ color: "#ffffff" }}>Leave Management</span>, and
+                                <span style={{ color: "#ffffff" }}> News Feed</span> modules.
+                            </li>
+                        </ul>
+
+                        <h5 className={classes.subHeading}>Responsibilities:</h5>
+                        <ul className={classes.cardList}>
+                            <li>Developed <span style={{ color: "#ffffff" }}>REST APIs</span> for different modules.</li>
+                            <li>
+                                Implemented <span style={{ color: "#ffffff" }}>authentication</span> and
+                                <span style={{ color: "#ffffff" }}> authorization</span> using Spring Security.
+                            </li>
+                            <li>
+                                Implemented routing with
+                                <span style={{ color: "#ffffff" }}> Spring Cloud Gateway</span> and enabled
+                                <span style={{ color: "#ffffff" }}> dynamic service discovery</span> using
+                                <span style={{ color: "#ffffff" }}> Netflix Eureka</span>.
+                            </li>
+                            <li>Designed and maintained the <span style={{ color: "#ffffff" }}>MySQL database schema</span>.</li>
+                            <li>Integrated backend services with <span style={{ color: "#ffffff" }}>ReactJS frontend</span>.</li>
+                        </ul>
+
+                        <p className={classes.techLine}>
+                            <span style={{ color: "#ffffff" }}>Tech:</span> Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway ·
+                            Netflix Eureka · Netflix Hystrix · Spring Data JPA · React · JavaScript · MySQL · Maven · Microservices Architecture
+                        </p>
+                    </article>
+
+                    {/* Satsuma Droid – Android Internship */}
+                    <article
+                        className={classes.card}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                    >
+                        <h3 className={classes.company}>Satsuma Droid Pvt. Ltd</h3>
+                        <h4 className={classes.role}>
+                            <span style={{ color: "#ffffff" }}>Android Java Developer</span> — <span style={{ color: "#ffffff" }}>Internship</span>
+                        </h4>
+                        <p className={classes.dates}>Jul 2019 – Sep 2019</p>
+
+                        <p className={classes.summary}>
+                            Android Developer <span style={{ color: "#ffffff" }}>Intern</span> – <span style={{ color: "#ffffff" }}>Islamic Book Application</span>
+                        </p>
+
+                        <ul className={classes.cardList}>
+                            <li>
+                                Learned Android development fundamentals while building the
+                                <span style={{ color: "#ffffff" }}> Fazail-e-Amaal Islamic Book App</span>.
+                            </li>
+
+                            <li>
+                                Developed core features such as
+                                <span style={{ color: "#ffffff" }}> Search</span>,
+                                <span style={{ color: "#ffffff" }}> Text Resizing</span>,
+                                <span style={{ color: "#ffffff" }}> Bookmarking</span>, and designed the layout to streamline the reading experience and app usability.
+                            </li>
+                        </ul>
+
+                        <p className={classes.techLine}>
+                            <span style={{ color: "#ffffff" }}>Tech:</span> Java · OOP · Android Studio · Android SDK · XML · SQLite
+                        </p>
+
+                        <a
+                            className={classes.link}
+                            href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Fazail-e-Amaal
+                        </a>
+                    </article>
 
                 </div>
-
-
-                {/*Experience*/}
-
-                <div className={classes.experience}>
-
-
-                    <h1 className={classes.experience} style={{fontSize: "1.8rem"}}>siParadigm Diagnostic
-                        Informatics</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.5rem", color: "#01bf71"}}>Java
-                        Developer</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Oct 2021 - Sep
-                        2022</h1>
-
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on
-                        Healthcare Software as Backend<span style={{color: "#fff"}}> Java </span>Developer.</p>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>KT - Knowledge
-                        Transfer/Transition and Handover. Official KT phase through documents. From Jul-2022 to Sep-2022
-                        Online.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on <span
-                        style={{color: "#fff"}}>Java</span> and J2EE.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Hands-on
-                        experience on Tomcat and WildFly JBoss Servers.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>JSF Framework and
-                        Primefaces. Created Registration Process.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Knowledge of
-                        creating restful Web Services.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>1+ years of
-                        experience in Web development using Core- Java · JavaEE · Spring Framework · JSP · JSF · Servlet
-                        · Spring<br></br> · Spring MVC · Spring Security · JDBC · Hibernate · Microservices · Spring
-                        Boot ·
-                        Spring JPA Jasper Reports.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Has a strong
-                        ability to learn new technologies in a short span and implement them independently.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Technologies :
-                        Java 1.8 · EJB · JSF · Primefaces · Hibernate · Spring Boot · MariaDB
-                    </li>
-                    <a className={classes.experience} style={{fontSize: "1.1rem", color: "#fff",}}
-                       href="https://tiger.siparadigm.com/tiger/">Tiger</a>
-
-                </div>
-                <div className={classes.experience}>
-
-
-                    <h1 className={classes.experience} style={{fontSize: "1.8rem"}}>siParadigm Diagnostic
-                        Informatics</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.5rem", color: "#01bf71"}}>DevOps | Support
-                        Engineer</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Jul 2020 - Oct
-                        2021</h1>
-
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on
-                        Healthcare Software as a<span style={{color: "#fff"}}> Support Engineer/DevOps </span>.</p>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Effective
-                        documentation of issues and bugs.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Hands-on practice
-                        with Jira/Agile · AWS · Ansible · Chef · Docker · Jenkins CI/CD · Kubernetes.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Identified and
-                        fixed Production and Testing environment issues.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Data fetching from
-                        different databases on client/customer requests.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>HIPAA (privacy
-                        law) - HL7 (messaging standard) with Mirth Connect (secure exchange of messages)
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Server monitoring
-                        and deployment using MobaXterm (Linux Command) and Linux fundamental.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Responding in a
-                        timely manner to service issues and requests while working on IT Support Position.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Technologies :
-                        Java 1.8 · EJB · JSF · Primefaces · Hibernate · Spring Boot · MariaDB · Jira/Agile · AWS ·
-                        Ansible · Chef · Docker · Jenkins CI/CD · Kubernetes · Mirth Connect
-                    </li>
-                    <a className={classes.experience} style={{fontSize: "1.1rem", color: "#fff",}}
-                       href="https://tiger.siparadigm.com/tiger/">Tiger</a>
-
-                </div>
-                <div className={classes.experience}>
-
-
-                    <h1 className={classes.experience} style={{fontSize: "1.8rem"}}>Satsuma Droid Pvt. Ltd</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.5rem", color: "#01bf71"}}>Junior Java
-                        Developer</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Sep 2019 - Jul
-                        2020</h1>
-
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked with <span
-                        style={{color: "#fff"}}>Java</span> and Spring Boot as the backend to build a website HRMS.</p>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>A Human Resource
-                        Management Solution developed in Microservices Architecture.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Description: The
-                        employee management system has multiple modules and it was a role-based application.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Modules were the
-                        HR Module, Employee Module, Finance Module, Leave Management System module, and news feed
-                        module.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Technologies :
-                        Java, Spring, Spring Boot, Spring Security, Spring Cloud API Gateway, Netflix Eureka, Netflix
-                        Hystrix, Spring JPA, and MySQL Database.
-                    </li>
-
-                </div>
-
-                <div className={classes.experience}>
-
-
-                    <h1 className={classes.experience} style={{fontSize: "1.8rem"}}>Satsuma Droid Pvt. Ltd</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.5rem", color: "#01bf71"}}>Android Java
-                        Developer(Internship)</h1>
-
-                    <h1 className={classes.experience} style={{fontSize: "1.1rem", color: "#fff"}}>Jul 2019 - Sep
-                        2019</h1>
-
-                    <p className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Worked on Islamic
-                        Book Android App as Android <span style={{color: "#fff"}}>Java</span> Developer.</p>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Fazail-E-Amaal
-                        Islamic Book Application.
-                    </li>
-                    <li className={classes.experience} style={{fontSize: "1.2rem", color: "#01bf71"}}>Technologies :
-                        Java, Android Studio, Android developer tools, XML, and SQLite Database.
-                    </li>
-                    <a className={classes.experience} style={{fontSize: "1.1rem", color: "#fff",}}
-                       href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazal-E-Amaal</a>
-
-                </div>
-            </div>
-
-
+            </section>
         </div>
-    )
-}
+    );
+};
 
-export default Experience
+export default Experience;
