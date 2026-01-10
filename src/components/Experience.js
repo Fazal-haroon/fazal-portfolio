@@ -56,7 +56,7 @@ const Experience = () => {
 
                             <ul className={classes.cardList}>
                                 <li>
-                                    Final Grade: <span style={{ color: "#ffffff" }}>83.75%</span>
+                                    Final Grade: <span style={{ color: "#ffffff" }}>83.75% (CGPA: 3.35 / 4.00)</span>
                                 </li>
                             </ul>
                         </section>

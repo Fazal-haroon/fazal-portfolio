@@ -1,111 +1,87 @@
 .fazal {
+    display: flow-root;
     background: #000;
     color: #fff;
     min-height: 100vh;
-    padding: 4rem 1rem 4rem;
+    padding: 4rem 1rem 6rem;
 }
 
-.skills {
-    margin-left: 4%;
-    color: #fff;
-    padding-top: 1rem;
-    text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-    font-size: 2rem;
+/* THE CARD STYLE FROM PROJECT.JS */
+.img {
+    width: min(1100px, 96%);
+    margin-inline: auto;
+    margin-top: 0 !important;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(145deg, #0d0d0d, #111);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(1, 191, 113, 0.08);
+    padding: 1.5rem 1.2rem 2rem;
+    transition: all 0.3s ease;
 }
 
-.box {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.8rem;
-    margin-left: 7%;
-    color: #01bf71;
-    gap: 0.2rem;
-    transition: all 200ms ease-in-out;
-}
-
-.box:hover,
-.box:active {
-    transform: scale(1.05);
-    font-weight: 400;
-}
-
-.tech {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 2rem auto 0;
-    justify-content: space-evenly;
+.img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8), 0 0 35px rgba(1, 191, 113, 0.15);
 }
 
 .skillsTitle {
     margin-left: 4%;
-    margin-bottom: 0.25rem;
     color: #fff;
     font-size: 2.4rem;
     font-weight: 600;
 }
 
-/* Subtitle under main title */
 .subText {
     margin-left: 4%;
     margin-top: 0.1rem;
     margin-bottom: 2.5rem;
     font-size: 1.05rem;
     color: #b3b3b3;
-    font-weight: 400;
-    letter-spacing: 0.3px;
 }
 
-/* Section titles: "Frontend", "Backend", "Deployment", "Tools & Platforms" */
 .sectionTitle {
-    margin-left: 4%;
-    margin-top: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff; /* Icons and text inside box */
+    transition: all 200ms ease-in-out;
+}
+
+.box svg {
+    color: #01bf71; /* Make icons green */
+    font-size: 1.5rem;
+}
+
+.box:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 960px) {
-    .fazal {
-        padding: 3rem 1rem 5rem;
+    .img {
+        width: 100%;
+        padding: 1.5rem 0.75rem;
     }
-
-    .skills {
-        padding-top: 2rem;
-        margin-left: 6%;
-        font-size: 2.2rem;
-    }
-
-    .box {
-        font-size: 1.3rem;
-        padding: 4%;
-        margin-left: 0;
-        justify-content: center;
-        text-align: center;
-    }
-
     .tech {
-        width: 95%;
-        margin-top: 1.5rem;
-    }
-
-    .skillsTitle {
-        font-size: 2rem;
-        margin-left: 6%;
-    }
-
-    .subText {
-        font-size: 0.95rem;
-        margin-left: 6%;
-        margin-bottom: 2rem;
-    }
-
-    .sectionTitle {
-        font-size: 1.6rem;
-        margin-left: 6%;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 }
-
