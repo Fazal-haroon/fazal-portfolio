@@ -10,18 +10,18 @@ import {Route, Routes} from "react-router-dom"
 function App() {
     return (<>
 
-            <Navbar/>
+        <Navbar/>
 
-            <Routes>
+        <Routes>
 
-                <Route path="/" element={<Home/>}/>
-                <Route path="/skills" exact element={<Skills/>}/>
-                <Route path="/project" exact element={<Project/>}/>
-                <Route path="/experience" exact element={<Experience/>}/>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/skills" exact element={<Skills/>}/>
+            <Route path="/project" exact element={<Project/>}/>
+            <Route path="/experience" exact element={<Experience/>}/>
 
 
-            </Routes>
-        </>);
+        </Routes>
+    </>);
 }
 
 export default App;

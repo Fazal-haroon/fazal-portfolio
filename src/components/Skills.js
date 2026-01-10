@@ -1,23 +1,35 @@
 import React, {useEffect} from 'react';
 import classes from '../assets/css/Skills.module.css'
-import {FaAngular, FaAws, FaBootstrap, FaCss3, FaHtml5, FaJava, FaJenkins, FaJira, FaApple, FaAndroid, FaFileInvoice} from 'react-icons/fa';
+import {
+    FaAndroid,
+    FaAngular,
+    FaApple,
+    FaAws,
+    FaBootstrap,
+    FaCss3,
+    FaFileInvoice,
+    FaHtml5,
+    FaJava,
+    FaJenkins,
+    FaJira
+} from 'react-icons/fa';
 import {
     SiAzurepipelines,
     SiHibernate,
+    SiIonic,
     SiJava,
     SiJavascript,
+    SiLaravel,
     SiMongodb,
     SiNetlify,
+    SiPhp,
     SiPostman,
     SiReact,
     SiRedux,
     SiSpring,
     SiSpringboot,
     SiSpringsecurity,
-    SiTypescript,
-    SiIonic,
-    SiLaravel,
-    SiPhp
+    SiTypescript
 } from "react-icons/si";
 import {FiFigma} from 'react-icons/fi';
 import {DiGit} from 'react-icons/di';
