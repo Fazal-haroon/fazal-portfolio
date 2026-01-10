@@ -40,24 +40,48 @@ const Experience = () => {
                     Education
                 </h2>
 
-                <div className={classes.eduBlock} data-aos="fade-up" data-aos-once="true">
-                    <div className={classes.eduItem}>
-                        <p className={classes.eduDegree}>
-                            Bachelor&apos;s degree, Computer Science, Grade: 83.75%
-                        </p>
-                        <p className={classes.eduInstitute}>
-                            University of Engineering &amp; Technology Peshawar
-                        </p>
-                        <p className={classes.eduYear}>Sep 2017 – Aug 2021</p>
-                    </div>
+                <div className={classes.cardsColumn}>
+                    <article className={classes.card} data-aos="fade-up" data-aos-once="true">
+                        <h3 className={classes.company}>University of Engineering &amp; Technology Peshawar</h3>
 
-                    <div className={classes.eduItem}>
-                        <p className={classes.eduDegree}>Diploma of Information Technology, Grade: 80.57%</p>
-                        <p className={classes.eduInstitute}>
-                            KP Board of Technical Education Peshawar
-                        </p>
-                        <p className={classes.eduYear}>2015 – 2016</p>
-                    </div>
+                        <section className={classes.roleBlock}>
+                            <div className={classes.timelineDot} />
+
+                            <h4 className={classes.roleTitle}>
+                                <span style={{ color: "#ffffff" }}>Bachelor’s Degree</span> —{" "}
+                                <span className={classes.eduMajor}>Computer Science</span>
+                            </h4>
+
+                            <p className={classes.roleMeta}>Sep 2017 – Aug 2021</p>
+
+                            <ul className={classes.cardList}>
+                                <li>
+                                    Final Grade: <span style={{ color: "#ffffff" }}>83.75%</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+
+                    <article className={classes.card} data-aos="fade-up" data-aos-once="true">
+                        <h3 className={classes.company}>KP Board of Technical Education Peshawar</h3>
+
+                        <section className={classes.roleBlock}>
+                            <div className={classes.timelineDot} />
+
+                            <h4 className={classes.roleTitle}>
+                                <span style={{ color: "#ffffff" }}>Diploma</span> —{" "}
+                                <span className={classes.eduMajor}>Information Technology</span>
+                            </h4>
+
+                            <p className={classes.roleMeta}>2015 – 2016</p>
+
+                            <ul className={classes.cardList}>
+                                <li>
+                                    Final Grade: <span style={{ color: "#ffffff" }}>80.57%</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
                 </div>
             </section>
 
