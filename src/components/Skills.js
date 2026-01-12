@@ -1,41 +1,19 @@
-import React, {useEffect} from 'react';
-import classes from '../assets/css/Skills.module.css'
+import React, { useEffect } from 'react';
+import classes from '../assets/css/Skills.module.css';
 import {
-    FaAndroid,
-    FaAngular,
-    FaApple,
-    FaAws,
-    FaBootstrap,
-    FaCss3,
-    FaFileInvoice,
-    FaHtml5,
-    FaJava,
-    FaJenkins,
-    FaJira
+    FaAndroid, FaAngular, FaApple, FaAws, FaBootstrap, FaCss3,
+    FaFileInvoice, FaHtml5, FaJava, FaJenkins, FaJira
 } from 'react-icons/fa';
 import {
-    SiAzurepipelines,
-    SiHibernate,
-    SiIonic,
-    SiJava,
-    SiJavascript,
-    SiLaravel,
-    SiMongodb,
-    SiNetlify,
-    SiPhp,
-    SiPostman,
-    SiReact,
-    SiRedux,
-    SiSpring,
-    SiSpringboot,
-    SiSpringsecurity,
-    SiTypescript
+    SiAzurepipelines, SiHibernate, SiIonic, SiJavascript, SiLaravel,
+    SiMongodb, SiNetlify, SiPhp, SiPostman, SiReact, SiRedux,
+    SiSpring, SiSpringboot, SiSpringsecurity, SiTypescript, SiDocker
 } from "react-icons/si";
-import {FiFigma} from 'react-icons/fi';
-import {DiGit} from 'react-icons/di';
-import {GrDocker, GrGithub, GrMysql} from 'react-icons/gr';
-import "aos/dist/aos.css"
-import Aos from "aos"
+import { FiFigma } from 'react-icons/fi';
+import { DiGit, DiJava } from 'react-icons/di';
+import { GrGithub, GrMysql } from 'react-icons/gr';
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Skills = () => {
 
@@ -53,9 +31,9 @@ const Skills = () => {
             <p className={classes.subText}>From frontend and backend to deployment and tools</p>
 
             {/* ================= FRONTEND ================= */}
-            <h3 className={classes.sectionTitle}>Frontend</h3>
-            <div data-aos-once="true" data-aos="zoom-out" className={classes.tech}>
-
+                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
+                    <h3 className={classes.sectionTitle}>Frontend</h3>
+                    <div className={classes.tech}>
                 <div className={classes.box}>
                     <FaHtml5/>
                     <p1>HTML5</p1>
@@ -105,13 +83,13 @@ const Skills = () => {
                     <FiFigma/>
                     <p1>Figma</p1>
                 </div>
-
+                    </div>
             </div>
 
             {/* ================= BACKEND ================= */}
-            <h3 className={classes.sectionTitle}>Backend</h3>
-            <div data-aos="zoom-out" data-aos-once="true" className={classes.tech}>
-
+                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
+                    <h3 className={classes.sectionTitle}>Backend</h3>
+                    <div className={classes.tech}>
                 <div className={classes.box}>
                     <FaJava/>
                     <p1>Java</p1>
@@ -143,12 +121,12 @@ const Skills = () => {
                 </div>
 
                 <div className={classes.box}>
-                    <SiJava/>
+                    <DiJava/>
                     <p1>Microservices</p1>
                 </div>
 
                 <div className={classes.box}>
-                    <SiJava/>
+                    <DiJava/>
                     <p1>REST / SOAP Services</p1>
                 </div>
 
@@ -171,13 +149,13 @@ const Skills = () => {
                     <SiMongodb/>
                     <p1>MongoDB</p1>
                 </div>
-
+                    </div>
             </div>
 
             {/* ================= DEPLOYMENT ================= */}
-            <h3 className={classes.sectionTitle}>Deployment</h3>
-            <div data-aos="zoom-out" data-aos-once="true" className={classes.tech}>
-
+                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
+                    <h3 className={classes.sectionTitle}>Deployment</h3>
+                    <div className={classes.tech}>
                 <div className={classes.box}>
                     <DiGit/>
                     <p1>Git</p1>
@@ -199,7 +177,7 @@ const Skills = () => {
                 </div>
 
                 <div className={classes.box}>
-                    <GrDocker/>
+                    <SiDocker/>
                     <p1>Docker</p1>
                 </div>
 
@@ -217,13 +195,13 @@ const Skills = () => {
                     <FaJira/>
                     <p1>Jira</p1>
                 </div>
-
+                    </div>
             </div>
 
             {/* ================= TOOLS & PLATFORMS ================= */}
-            <h3 className={classes.sectionTitle}>Tools & Platforms</h3>
-            <div data-aos="zoom-out" data-aos-once="true" className={classes.tech}>
-
+            <div className={classes.img} data-aos="fade-up" data-aos-once="true">
+                <h3 className={classes.sectionTitle}>Tools & Platforms</h3>
+                <div className={classes.tech}>
                 <div className={classes.box}>
                     <FaJava/>
                     <p1>IntelliJ IDEA</p1>
@@ -268,9 +246,8 @@ const Skills = () => {
                     <FaAndroid/>
                     <p1>Android Studio</p1>
                 </div>
-
+                </div>
             </div>
-
         </div>
     );
 };

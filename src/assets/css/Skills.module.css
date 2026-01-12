@@ -43,7 +43,6 @@
 .sectionTitle {
     font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
     margin-left: 1rem;
     color: #fff;
 }
@@ -54,7 +53,6 @@
     gap: 1.5rem;
     justify-content: flex-start;
     padding-left: 1rem;
-    margin-bottom: 2.5rem;
 }
 
 .box {
