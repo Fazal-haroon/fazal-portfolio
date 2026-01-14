@@ -1,159 +1,155 @@
 .fazal {
-    height: 100px;
+    height: 80px; /* Reduced for a sleeker profile */
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Ensures everything is perfectly centered vertically */
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navlinks {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
-    width: 40%;
-    color: #fff;
-    font-weight: 650;
-    margin-top: 2.6%;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-.resume {
-    margin-top: 0; /* Changed from 2% to 0 for better vertical centering */
-    display: flex;
-    align-items: center;
+/* Base Link Styling */
+.about {
+    font-size: 16px; /* Professional standard size */
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
+    padding: 8px 15px;
     color: #fff;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.about:hover, .active {
+    color: #01bf71 !important;
+}
+
+/* Desktop Only Hover Underline */
+@media screen and (min-width: 961px) {
+    .active {
+        border-bottom: 2px solid #01bf71;
+    }
+}
+
+/* RESUME BUTTON */
+.resume {
+    margin: 0;
+    display: flex;
+    color: white;
+    align-items: center;
 }
 
 .resume a {
     display: flex;
     align-items: center;
-    padding: 6px 16px;
-    border: 1.5px solid transparent;
-    border-radius: 4px;
+    padding: 8px 18px;
+    border: 1.5px solid #01bf71; /* Always showing a faint border adds structure */
+    border-radius: 6px;
     color: #fff;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
-/* Create a "Border Glow" effect on hover */
 .resume:hover a {
-    color: #01bf71;
-    border: 1.5px solid #01bf71;
-    background: rgba(1, 191, 113, 0.05); /* Very subtle green tint */
+    background: rgba(1, 191, 113, 0.1);
+    box-shadow: 0 0 15px rgba(1, 191, 113, 0.2);
 }
 
 .navIcon {
     margin-left: 10px;
     font-size: 1.1rem;
-    color: #fff; /* White by default */
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .resume:hover .navIcon {
-    color: #01bf71;
-    transform: scale(1.1); /* Slightly enlarge instead of just lifting */
+    transform: scale(1.2);
 }
 
-/* --- Mobile Improvements --- */
+/* MOBILE TOGGLE BUTTON */
+.mobile {
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* MOBILE VIEW */
 @media screen and (max-width: 960px) {
+    .fazal {
+        height: 70px;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    /* Resume Position Fix for Mobile */
     .resume {
-        position: absolute;
-        top: 12px;
-        left: 20px;
-        margin-top: 0;
-        z-index: 1000;
+        position: static; /* Let flexbox handle it */
     }
 
     .resume a {
-        padding: 4px 10px;
-        font-size: 0.9rem; /* Smaller on mobile to save space */
-        border: 1px solid rgba(1, 191, 113, 0.3); /* Always show border on mobile for visibility */
+        padding: 6px 12px;
+        font-size: 0.85rem;
     }
-}
 
-.about {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px 20px;
-}
-
-
-.about:hover {
-    border-bottom: 3px solid #01bf71;
-}
-
-
-.mobilelinks {
-    display: none;
-}
-
-.mobile {
-    display: none;
-}
-
-@media screen and (max-width: 960px) {
-    .navlinks {
-        display: none;
+    /* Professional Mobile Icon Style */
+    .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
         color: #fff;
+        border: 1.5px solid rgba(1, 191, 113, 0.5); /* Matching the Resume button style */
+        border-radius: 6px;
+        font-size: 22px;
+        outline: none;
     }
 
-    .about:hover {
-        border-bottom: 0px;
+    .mobile:hover {
+        background-color: rgba(1, 191, 113, 0.1);
+        color: #01bf71;
+        border-color: #01bf71;
     }
 
     .mobilelinks {
         position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.95);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
+        padding: 40px 0;
+        gap: 30px;
         list-style: none;
-        background-color: black;
-        color: #fff;
-        top: 10%;
-        text-align: center;
-        transition: all 0.5s ease-out;
-        width: 100%;
-        height: 50%;
-        padding-top: 5%;
-        z-index: 999999;
-        font-weight: 700;
+        z-index: 1000;
+        border-bottom: 2px solid #01bf71;
+        transition: all 0.4s ease-in-out;
     }
 
     .about {
-        color: #fff;
+        font-size: 22px;
+        width: 100%;
         text-align: center;
-        justify-content: space-between;
-        transition: all 0.5s ease;
     }
-
-    .mobilelinks > li:hover {
-        color: #01bf71;
-    }
-
-    .mobile {
-        display: block;
-        position: absolute;
-        font-size: 30px;
-        color: white;
-        background-color: #01bf71;
-        border: none;
-        outline: none;
-        top: 15px;
-        right: 25px;
-    }
-
-}
-
-.active {
-    color: #01bf71;
-    border-bottom: 3px solid #01bf71;
-}
-
-.about {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
