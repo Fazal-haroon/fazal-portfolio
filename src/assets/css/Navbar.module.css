@@ -15,18 +15,63 @@
     margin-top: 2.6%;
 }
 
-
 .resume {
+    margin-top: 0; /* Changed from 2% to 0 for better vertical centering */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume a {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    border: 1.5px solid transparent;
+    border-radius: 4px;
     color: #fff;
     font-weight: 600;
-    margin-top: 2%;
-    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.resume:hover {
+/* Create a "Border Glow" effect on hover */
+.resume:hover a {
     color: #01bf71;
+    border: 1.5px solid #01bf71;
+    background: rgba(1, 191, 113, 0.05); /* Very subtle green tint */
 }
 
+.navIcon {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: #fff; /* White by default */
+    transition: all 0.3s ease;
+}
+
+.resume:hover .navIcon {
+    color: #01bf71;
+    transform: scale(1.1); /* Slightly enlarge instead of just lifting */
+}
+
+/* --- Mobile Improvements --- */
+@media screen and (max-width: 960px) {
+    .resume {
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        margin-top: 0;
+        z-index: 1000;
+    }
+
+    .resume a {
+        padding: 4px 10px;
+        font-size: 0.9rem; /* Smaller on mobile to save space */
+        border: 1px solid rgba(1, 191, 113, 0.3); /* Always show border on mobile for visibility */
+    }
+}
 
 .about {
     font-size: 20px;
@@ -49,8 +94,6 @@
 }
 
 @media screen and (max-width: 960px) {
-
-
     .navlinks {
         display: none;
         color: #fff;
@@ -60,17 +103,7 @@
         border-bottom: 0px;
     }
 
-    .resume {
-        display: flex;
-        position: absolute;
-        top: 15px;
-        left: 35px;
-        color: #fff;
-        z-index: 1000000000;
-    }
-
     .mobilelinks {
-
         position: absolute;
         display: flex;
         flex-direction: column;

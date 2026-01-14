@@ -24,11 +24,13 @@ const Skills = () => {
     return (
         <div className={classes.fazal}>
 
-            <h3 className={classes.sectionTitle}>
-                Technologies I work with:
-            </h3>
-
-            <p className={classes.subText}>From frontend and backend to deployment and tools</p>
+            <div className={classes.headerSection}>
+                {/*<h2 className={classes.mainTitle}>Technical Expertise</h2>*/}
+                <p className={classes.subTitle}>
+                    A specialized stack focused on <strong>Scalability</strong>, <strong>Performance</strong>, and <strong>Modern Architecture</strong>.
+                </p>
+                {/*<div className={classes.divider}></div>*/}
+            </div>
 
             {/* ================= FRONTEND ================= */}
                 <div className={classes.img} data-aos="fade-up" data-aos-once="true">
