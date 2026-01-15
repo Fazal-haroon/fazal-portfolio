@@ -6,6 +6,7 @@ import Experience from '../src/components/Experience';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import {Route, Routes} from "react-router-dom"
+import Footer from "./components/Footer";
 
 function App() {
     return (<>
@@ -17,6 +18,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="*" element={<Home />} />
         </Routes>
+        <Footer />
     </>);
 }
 

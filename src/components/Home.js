@@ -61,16 +61,16 @@ const Home = () => {
 </span>
 
                 <a target="_blank"
-                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   rel="noreferrer" style={{textDecoration: 'inherit'}}
                    href='https://www.linkedin.com/in/fazalharoon/'><FaLinkedin/></a>
                 <a target="_blank"
-                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   rel="noreferrer" style={{textDecoration: 'inherit'}}
                    href='https://github.com/Fazal-haroon'><FaGithub/></a>
                 <a target="_blank"
-                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   rel="noreferrer" style={{textDecoration: 'inherit'}}
                    href='https://stackoverflow.com/users/9947525/fazal-haroon'><FaStackOverflow/></a>
                 <a target="_blank"
-                   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}
+                   rel="noreferrer" style={{textDecoration: 'inherit'}}
                    href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q"><FaYoutube/></a>
                 {/*<a target="_blank"*/}
                 {/*   rel="noreferrer" style={{color: 'inherit', textDecoration: 'inherit'}}*/}

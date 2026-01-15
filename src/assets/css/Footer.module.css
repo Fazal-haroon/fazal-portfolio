@@ -1,0 +1,80 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+.socialContainer {
+    display: flex;
+    gap: 25px;
+    /* Margin exists on mobile to separate from email below it */
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.icon:hover {
+    color: #01bf71;
+    transform: translateY(-3px);
+}
+
+.emailContainer {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.emailLink {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+    color: #01bf71;
+}
+
+.emailIcon {
+    font-size: 0.85rem;
+}
+
+/* --- DESKTOP VIEW (Big Screens) --- */
+/* When screen is wider than 768px, switch to row layout */
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row; /* Makes them side-by-side */
+        justify-content: space-between; /* Pushes Icons left and Email right */
+        padding: 15px 50px; /* Reduced vertical padding, added side padding */
+        height: 60px; /* Fixed smaller height for sleek look */
+    }
+
+    .socialContainer {
+        margin-bottom: 0; /* Remove the gap since they are not stacked anymore */
+    }
+}
+
+/* --- MOBILE TWEAK --- */
+@media screen and (max-width: 600px) {
+    .socialContainer {
+        gap: 20px;
+    }
+    /* On very small phones, keep the padding */
+    .footer {
+        padding: 15px 0;
+    }
+}

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 100vh;
+    min-height: calc(100vh - 140px);
     background: #000;
     color: #fff;
     padding: 4rem 1rem;
@@ -26,30 +26,61 @@
     color: #01bf71;
 }
 
+/* Container for the icons */
 .icon {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* This creates perfect equal spacing between icons without calculating percentages */
+    gap: 25px;
+    margin-top: 30px;
     position: relative;
-    margin-top: 2%;
-    width: 25%;
-    cursor: pointer;
-    color: #01bf71;
 }
 
+/* Targeting the Links (a) and the Email Button (span) */
+/* We target children (>) to ensure we override the inline styles */
+.icon > a, .icon > span {
+    color: #ccd6f6; /* Starts as a soft professional white/grey */
+    font-size: 1.6rem;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); /* Smooth physics transition */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover Effect - Matches your Footer/Navbar Green */
+.icon > a:hover, .icon > span:hover {
+    color: #01bf71;
+    transform: translateY(-3px); /* Subtle lift up effect */
+}
+
+/* Specific styling for the email copy button if needed */
+.copyMail {
+    /* No extra styles needed, it inherits from the rule above */
+}
+
+/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 960px) {
 
+    .fazal {
+        /* Reduced from 100% to avoid huge empty scrolling space */
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers everything on mobile */
+        text-align: center;
+    }
+
     .heading {
-        width: 80%;
+        width: 100%; /* Use full width on mobile for better text wrapping */
+        padding: 0 20px; /* Prevent text touching edges */
     }
 
     .icon {
-        position: static;
-        width: 50%;
-        margin-top: 6%;
-    }
-
-    .fazal {
-        padding-bottom: 100%;
+        width: 100%;
+        justify-content: center; /* perfectly centers icons on mobile */
+        margin-top: 40px;
+        gap: 35px; /* Slightly larger gap for touch targets */
     }
 }
 
