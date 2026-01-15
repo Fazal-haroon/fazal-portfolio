@@ -1,0 +1,81 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.5s;
+    transition: opacity 0.4s;
+    /* CHANGE 1: Lower opacity so it's "ghost-like" when not using it */
+    opacity: 0.6;
+}
+
+.scrollToTop:hover {
+    opacity: 1; /* Full visibility on hover */
+}
+
+.iconContainer {
+    /* CHANGE 2: Transparent background instead of solid green */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* CHANGE 3: Smaller size (was 45px) */
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Green border to define the shape */
+    border: 2px solid #01bf71;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(2px); /* Optional: slight blur behind it */
+}
+
+.iconContainer:hover {
+    transform: translateY(-3px);
+    /* On hover, fill it with your green color */
+    background-color: #01bf71;
+    box-shadow: 0 0 15px rgba(1, 191, 113, 0.5);
+}
+
+.icon {
+    font-size: 1rem;
+    /* Default icon color is Green to match border */
+    color: #01bf71;
+    transition: color 0.3s ease-in-out;
+}
+
+/* On hover, turn icon white so it's visible on the green background */
+.iconContainer:hover .icon {
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+}
+
+/* --- Mobile Tweak --- */
+@media screen and (max-width: 600px) {
+    .scrollToTop {
+        bottom: 20px;
+        right: 20px;
+        opacity: 0.5; /* Even more transparent on mobile */
+    }
+
+    .iconContainer {
+        /* CHANGE 4: Very small on mobile to avoid blocking text */
+        width: 32px;
+        height: 32px;
+        border-width: 1.5px; /* Thinner border */
+    }
+
+    .icon {
+        font-size: 0.9rem;
+    }
+}

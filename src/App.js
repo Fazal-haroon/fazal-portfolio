@@ -7,6 +7,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import {Route, Routes} from "react-router-dom"
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (<>
@@ -19,6 +20,7 @@ function App() {
             <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
+        <ScrollToTop />
     </>);
 }
 

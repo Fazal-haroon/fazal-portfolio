@@ -10,7 +10,7 @@ import {FaGithub, FaLinkedin, FaStackOverflow, FaYoutube} from "react-icons/fa";
 const Home = () => {
 
     const handleCopyEmail = () => {
-        const email = "fazal.haroon01@gmail.com";
+        const email = "abc@gmail.com";
 
         navigator.clipboard.writeText(email);
 
