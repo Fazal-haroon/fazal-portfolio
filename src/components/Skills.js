@@ -1,17 +1,20 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import classes from '../assets/css/Skills.module.css';
 import {
-    FaAndroid, FaAngular, FaApple, FaAws, FaBootstrap, FaCss3,
-    FaFileInvoice, FaHtml5, FaJava, FaJenkins, FaJira
+    FaAndroid, FaAngular, FaAws, FaBootstrap, FaCss3,
+    FaFileInvoice, FaHtml5, FaJava, FaJenkins, FaJira,
+    FaTerminal, FaTools
 } from 'react-icons/fa';
 import {
-    SiAzurepipelines, SiHibernate, SiIonic, SiJavascript, SiLaravel,
-    SiMongodb, SiNetlify, SiPhp, SiPostman, SiReact, SiRedux,
-    SiSpring, SiSpringboot, SiSpringsecurity, SiTypescript, SiDocker
+    SiHibernate, SiIonic, SiJavascript, SiLaravel,
+    SiMongodb, SiNetlify, SiPostman, SiReact, SiRedux,
+    SiSpring, SiSpringboot, SiTypescript, SiDocker,
+    SiGithub, SiGit, SiIntellijidea, SiWebstorm, SiPhpstorm,
+    SiVisualstudiocode, SiSwagger, SiAppstore
 } from "react-icons/si";
-import { FiFigma } from 'react-icons/fi';
-import { DiGit, DiJava } from 'react-icons/di';
-import { GrGithub, GrMysql } from 'react-icons/gr';
+import {FiFigma} from 'react-icons/fi';
+import {DiGit, DiJava} from 'react-icons/di';
+import {GrGithub, GrMysql} from 'react-icons/gr';
 import "aos/dist/aos.css";
 import Aos from "aos";
 
@@ -21,235 +24,110 @@ const Skills = () => {
         Aos.init({duration: 1000});
     }, []);
 
+    const skillCategories = [
+        {
+            title: "Frontend",
+            subtitle: "Modern user interfaces & interactive experiences",
+            skills: [
+                { name: "HTML5", icon: <FaHtml5 /> },
+                { name: "CSS3", icon: <FaCss3 /> },
+                { name: "Bootstrap", icon: <FaBootstrap /> },
+                { name: "JavaScript", icon: <SiJavascript /> },
+                { name: "TypeScript", icon: <SiTypescript /> },
+                { name: "Angular", icon: <FaAngular /> },
+                { name: "React", icon: <SiReact /> },
+                { name: "Redux", icon: <SiRedux /> },
+                { name: "Ionic", icon: <SiIonic /> },
+                { name: "Figma", icon: <FiFigma /> },
+            ]
+        },
+        {
+            title: "Backend",
+            subtitle: "Scalable architecture & robust services",
+            skills: [
+                { name: "Java", icon: <FaJava /> },
+                { name: "Spring", icon: <SiSpring /> },
+                { name: "Spring Boot", icon: <SiSpringboot /> },
+                { name: "Spring Data", icon: <SiSpring /> },
+                { name: "Spring Security", icon: <SiSpring /> },
+                { name: "OAuth2", icon: <SiSpring /> },
+                { name: "Microservices", icon: <SiSpring /> },
+                { name: "REST / SOAP", icon: <SiPostman /> },
+                { name: "Hibernate", icon: <SiHibernate /> },
+                { name: "Laravel", icon: <SiLaravel /> },
+                { name: "MySQL", icon: <GrMysql /> },
+                { name: "MongoDB", icon: <SiMongodb /> },
+            ]
+        },
+        {
+            title: "Deployment",
+            subtitle: "Reliable CI/CD & infrastructure management",
+            skills: [
+                { name: "Git", icon: <SiGit /> },
+                { name: "GitHub", icon: <SiGithub /> },
+                { name: "CI/CD", icon: <FaTerminal /> },
+                { name: "Jenkins", icon: <FaJenkins /> },
+                { name: "Docker", icon: <SiDocker /> },
+                { name: "Netlify", icon: <SiNetlify /> },
+                { name: "AWS", icon: <FaAws /> },
+                { name: "Jira", icon: <FaJira /> },
+            ]
+        },
+        {
+            title: "Tools & Platforms",
+            subtitle: "Specialized environments for modern development",
+            skills: [
+                { name: "IntelliJ IDEA", icon: <SiIntellijidea /> },
+                { name: "WebStorm", icon: <SiWebstorm /> },
+                { name: "PhpStorm", icon: <SiPhpstorm /> },
+                { name: "VS Code", icon: <SiVisualstudiocode /> },
+                { name: "Postman", icon: <SiPostman /> },
+                { name: "Swagger / OpenAPI", icon: <SiSwagger /> },
+                { name: "JasperReports", icon: <FaFileInvoice /> },
+                { name: "Xcode", icon: <SiAppstore /> },
+                { name: "Android Studio", icon: <FaAndroid /> },
+            ]
+        }
+    ];
+
     return (
         <div className={classes.fazal}>
-
+            <section className={classes.section}>
+                <h2
+                    className={classes.sectionTitle}
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                >
+                    <FaTools /> Skills
+                </h2>
             <div className={classes.headerSection}>
                 {/*<h2 className={classes.mainTitle}>Technical Expertise</h2>*/}
                 <p className={classes.subTitle}>
-                    A specialized stack focused on <strong>Scalability</strong>, <strong>Performance</strong>, and <strong>Modern Architecture</strong>.
+                    A specialized stack focused on <span>Scalability</span>, <span>Performance</span>, and <span>Modern Architecture</span>.
                 </p>
                 {/*<div className={classes.divider}></div>*/}
             </div>
 
-            {/* ================= FRONTEND ================= */}
-                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
-                    <h3 className={classes.sectionTitle}>Frontend</h3>
-                    <div className={classes.tech}>
-                <div className={classes.box}>
-                    <FaHtml5/>
-                    <p1>HTML5</p1>
-                </div>
 
-                <div className={classes.box}>
-                    <FaCss3/>
-                    <p1>CSS3</p1>
+                <div className={classes.stackGrid}>
+                    {skillCategories.map((category, catIdx) => (
+                        <div key={catIdx} className={classes.categoryCard} data-reveal>
+                            <div className={classes.categoryInfo}>
+                                <h3 className={classes.categoryTitle}>{category.title}</h3>
+                                <p className={classes.categorySubtitle}>{category.subtitle}</p>
+                            </div>
+                            <div className={classes.pillsContainer}>
+                                {category.skills.map((skill, index) => (
+                                    <div key={index} className={classes.skillPill}>
+                                        <span className={classes.pillIcon}>{skill.icon}</span>
+                                        <span className={classes.pillName}>{skill.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
-
-                <div className={classes.box}>
-                    <FaBootstrap/>
-                    <p1>Bootstrap</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiJavascript/>
-                    <p1>JavaScript</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiTypescript/>
-                    <p1>TypeScript</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaAngular/>
-                    <p1>Angular</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiReact/>
-                    <p1>React</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiRedux/>
-                    <p1>Redux</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiIonic/>
-                    <p1>Ionic</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FiFigma/>
-                    <p1>Figma</p1>
-                </div>
-                    </div>
-            </div>
-
-            {/* ================= BACKEND ================= */}
-                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
-                    <h3 className={classes.sectionTitle}>Backend</h3>
-                    <div className={classes.tech}>
-                <div className={classes.box}>
-                    <FaJava/>
-                    <p1>Java</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiSpring/>
-                    <p1>Spring</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiSpringboot/>
-                    <p1>Spring Boot</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiSpring/>
-                    <p1>Spring Data</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiSpringsecurity/>
-                    <p1>Spring Security</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiSpringsecurity/>
-                    <p1>OAuth2</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <DiJava/>
-                    <p1>Microservices</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <DiJava/>
-                    <p1>REST / SOAP Services</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiHibernate/>
-                    <p1>Hibernate</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiLaravel/>
-                    <p1>Laravel</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <GrMysql/>
-                    <p1>MySQL</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiMongodb/>
-                    <p1>MongoDB</p1>
-                </div>
-                    </div>
-            </div>
-
-            {/* ================= DEPLOYMENT ================= */}
-                <div className={classes.img} data-aos="fade-up" data-aos-once="true">
-                    <h3 className={classes.sectionTitle}>Deployment</h3>
-                    <div className={classes.tech}>
-                <div className={classes.box}>
-                    <DiGit/>
-                    <p1>Git</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <GrGithub/>
-                    <p1>GitHub</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiAzurepipelines/>
-                    <p1>CI / CD</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaJenkins/>
-                    <p1>Jenkins</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiDocker/>
-                    <p1>Docker</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiNetlify/>
-                    <p1>Netlify</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaAws/>
-                    <p1>AWS</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaJira/>
-                    <p1>Jira</p1>
-                </div>
-                    </div>
-            </div>
-
-            {/* ================= TOOLS & PLATFORMS ================= */}
-            <div className={classes.img} data-aos="fade-up" data-aos-once="true">
-                <h3 className={classes.sectionTitle}>Tools & Platforms</h3>
-                <div className={classes.tech}>
-                <div className={classes.box}>
-                    <FaJava/>
-                    <p1>IntelliJ IDEA</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiJavascript/>
-                    <p1>WebStorm</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiPhp/>
-                    <p1>PhpStorm</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiReact/>
-                    <p1>VS Code</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiPostman/>
-                    <p1>Postman</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <SiPostman/>
-                    <p1>Swagger / OpenAPI</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaFileInvoice/>
-                    <p1>JasperReports</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaApple/>
-                    <p1>Xcode</p1>
-                </div>
-
-                <div className={classes.box}>
-                    <FaAndroid/>
-                    <p1>Android Studio</p1>
-                </div>
-                </div>
-            </div>
+            </section>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import classes from '../assets/css/Experience.module.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
-import {FaAndroid, FaApple} from "react-icons/fa";
+import { FaAndroid, FaApple, FaGlobe, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 
 const Experience = () => {
     useEffect(() => {
@@ -37,7 +37,7 @@ const Experience = () => {
                     data-aos="zoom-in"
                     data-aos-once="true"
                 >
-                    Education
+                    <FaGraduationCap /> Education
                 </h2>
 
                 <div className={classes.cardsColumn}>
@@ -49,7 +49,7 @@ const Experience = () => {
 
                             <h4 className={classes.roleTitle}>
                                 <span style={{color: "#ffffff"}}>Bachelor’s Degree</span> —{" "}
-                                <span className={classes.eduMajor}>Computer Science</span>
+                                <span>Computer Science</span>
                             </h4>
 
                             <p className={classes.roleMeta}>Sep 2017 – Aug 2021</p>
@@ -70,7 +70,7 @@ const Experience = () => {
 
                             <h4 className={classes.roleTitle}>
                                 <span style={{color: "#ffffff"}}>Diploma</span> —{" "}
-                                <span className={classes.eduMajor}>Information Technology</span>
+                                <span>Information Technology</span>
                             </h4>
 
                             <p className={classes.roleMeta}>2015 – 2016</p>
@@ -92,7 +92,7 @@ const Experience = () => {
                     data-aos="zoom-in"
                     data-aos-once="true"
                 >
-                    Experience
+                    <FaBriefcase /> Experience
                 </h2>
                 <div className={classes.cardsColumn}>
 
@@ -210,25 +210,53 @@ const Experience = () => {
                                 href="https://apps.apple.com/sa/app/almamob/id6475034380"
                                 target="_blank"
                                 rel="noreferrer"
-                            >AlmaMOB <FaApple className={classes.storeIcon}/></a>
+                            >
+                                <FaApple className={classes.storeIcon} /> AlmaMOB
+                            </a>
+
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+
                             <a
                                 className={classes.link}
                                 href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
                                 target="_blank"
                                 rel="noreferrer"
-                            >AlmaMOB <FaAndroid className={classes.storeIcon}/></a>
-                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
-                            <a className={classes.link} href="https://almabani.com/" target="_blank"
-                               rel="noreferrer">AlmaWebsite</a>
-                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
-                            <a className={classes.link} href="https://supregistration.almabani.com/" target="_blank"
-                               rel="noreferrer">
-                                Vendor Portal
+                            ><FaAndroid className={classes.storeIcon} /> AlmaMOB
                             </a>
+
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
-                            <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
-                               rel="noreferrer">AlmaERP</a>
+
+                            <a
+                                className={classes.link}
+                                href="https://almabani.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaGlobe className={classes.storeIcon} /> AlmaWebsite
+                            </a>
+
+                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+
+                            <a
+                                className={classes.link}
+                                href="https://supregistration.almabani.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaGlobe className={classes.storeIcon} /> Vendor Portal
+                            </a>
+
+                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+
+                            <a
+                                className={classes.link}
+                                href="https://erp.almabani.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaGlobe className={classes.storeIcon} /> AlmaERP
+                            </a>
+
                         </div>
                     </article>
 
@@ -356,7 +384,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            TiTalk
+                            <FaGlobe className={classes.storeIcon} /> TiTalk
                         </a>
                     </article>
 
@@ -531,7 +559,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Tiger
+                            <FaGlobe className={classes.storeIcon} /> Tiger
                         </a>
                     </article>
 
@@ -589,7 +617,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Fazail-e-Amaal
+                            <FaAndroid className={classes.storeIcon} /> Fazail-e-Amaal
                         </a>
                     </article>
                 </div>

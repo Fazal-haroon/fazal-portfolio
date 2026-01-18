@@ -43,42 +43,6 @@
     }
 }
 
-/* RESUME BUTTON */
-.resume {
-    margin: 0;
-    display: flex;
-    color: white;
-    align-items: center;
-}
-
-.resume a {
-    display: flex;
-    align-items: center;
-    padding: 8px 18px;
-    border: 1.5px solid #01bf71; /* Always showing a faint border adds structure */
-    border-radius: 6px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-.resume:hover a {
-    background: rgba(1, 191, 113, 0.1);
-    box-shadow: 0 0 15px rgba(1, 191, 113, 0.2);
-}
-
-.navIcon {
-    margin-left: 10px;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease;
-}
-
-.resume:hover .navIcon {
-    transform: scale(1.2);
-}
-
 /* MOBILE TOGGLE BUTTON */
 .mobile {
     display: none;
@@ -96,16 +60,6 @@
 
     .navlinks {
         display: none;
-    }
-
-    /* Resume Position Fix for Mobile */
-    .resume {
-        position: static; /* Let flexbox handle it */
-    }
-
-    .resume a {
-        padding: 6px 12px;
-        font-size: 0.85rem;
     }
 
     /* Professional Mobile Icon Style */
@@ -151,5 +105,147 @@
         font-size: 22px;
         width: 100%;
         text-align: center;
+    }
+}
+
+/* RESUME BUTTON */
+.resume {
+    margin: 0;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.resume a {
+    position: relative;
+    overflow: hidden;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 18px;
+    border: 1.5px solid rgba(1, 191, 113, 0.95);
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    background: rgba(1, 191, 113, 0.06);
+    box-shadow: 0 0 0 rgba(1, 191, 113, 0);
+
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* subtle “breathing” attention (works on mobile too) */
+.resume a {
+    animation: resumePulse 2.6s ease-in-out infinite;
+}
+
+/* light shine sweep (attention without being noisy) */
+.resume a::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -60%;
+    width: 60%;
+    height: 180%;
+    transform: rotate(20deg);
+
+    background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.18) 50%,
+            rgba(255, 255, 255, 0) 100%
+    );
+
+    opacity: 0.45;
+    animation: resumeShine 3.8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* Desktop hover: stronger focus */
+.resume:hover a {
+    background: rgba(1, 191, 113, 0.10);
+    box-shadow: 0 0 18px rgba(1, 191, 113, 0.22);
+    border-color: #01bf71;
+    transform: translateY(-1px);
+}
+
+.navIcon {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.25s ease;
+}
+
+.resume:hover .navIcon {
+    transform: scale(1.15);
+}
+
+/* Tap feedback (mobile) */
+.resume a:active {
+    transform: scale(0.98);
+    background: rgba(1, 191, 113, 0.12);
+    box-shadow: 0 0 16px rgba(1, 191, 113, 0.25);
+}
+
+/* Keyboard accessibility */
+.resume a:focus-visible {
+    outline: 2px solid rgba(1, 191, 113, 0.9);
+    outline-offset: 3px;
+}
+
+/* MOBILE VIEW (keep your existing, just enhance slightly) */
+@media screen and (max-width: 960px) {
+    .resume a {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+    }
+
+    .navIcon {
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .resume a,
+    .resume a::after {
+        animation: none;
+    }
+}
+
+/* Animations */
+@keyframes resumePulse {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(1, 191, 113, 0);
+        transform: translateY(0);
+    }
+    50% {
+        box-shadow: 0 0 14px rgba(1, 191, 113, 0.18);
+        transform: translateY(-0.5px);
+    }
+}
+
+@keyframes resumeShine {
+    0% {
+        left: -70%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.45;
+    }
+    50% {
+        left: 120%;
+        opacity: 0.2;
+    }
+    100% {
+        left: 120%;
+        opacity: 0;
     }
 }

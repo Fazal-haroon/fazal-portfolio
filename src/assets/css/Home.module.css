@@ -2,7 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    /* FIX 1: Use center + gap instead of space-evenly */
+    justify-content: center;
+    gap: 80px; /* Controls the exact horizontal distance between Image and Text */
     min-height: calc(100vh - 140px);
     background: #000;
     color: #fff;
@@ -109,40 +111,43 @@
 }
 
 
-/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 960px) {
-    .icon {
-        width: 100%;
-        margin-top: 40px;
-        justify-content: center; /* Ensures the row is centered */
-        gap: 15px;
-    }
-
     .fazal {
-        /* Reduced from 100% to avoid huge empty scrolling space */
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centers everything on mobile */
+        align-items: center;
         text-align: center;
-    }
-
-    .heading {
-        width: 100%; /* Use full width on mobile for better text wrapping */
-        padding: 0 20px; /* Prevent text touching edges */
+        gap: 30px;
+        padding-top: 60px;
     }
 
     .img {
-        /* Slightly smaller on mobile to look balanced */
         height: 250px;
         width: 250px;
-        /* Border looks better slightly thinner on mobile */
         border-width: 3px;
+
+        /* FIX 3: Ensure no default margins are adding invisible space */
+        margin: 0;
+    }
+
+    .heading {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0; /* Remove margins so 'gap' controls the spacing */
     }
 
     .about {
         font-size: 1.05rem;
         max-width: 100%;
-        margin: 0 auto 24px;
+        /* Keep spacing consistent */
+        margin: 0 auto 24px auto;
+    }
+
+    .icon {
+        width: 100%;
+        margin-top: 30px; /* Slightly reduced top margin for icons */
+        justify-content: center;
+        gap: 15px;
     }
 }

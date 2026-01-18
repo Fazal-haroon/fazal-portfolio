@@ -40,13 +40,6 @@
     color: #b3b3b3;
 }
 
-.sectionTitle {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-left: 1rem;
-    color: #fff;
-}
-
 .tech {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +64,63 @@
 
 .box:hover {
     transform: scale(1.1);
+}
+
+.section {
+    width: min(1100px, 96%);
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+.sectionTitle {
+    position: relative; /* REQUIRED for underline */
+    font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+    text-align: left;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+/* Handwritten underline */
+.sectionTitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    width: clamp(50px, 18vw, 70px); /* 👈 responsive width */
+    height: 4px;
+    border-radius: 4px;
+
+    background: linear-gradient(
+            90deg,
+            #01bf71 0%,
+            rgba(1, 191, 113, 0.9) 35%,
+            rgba(1, 191, 113, 0.4) 70%,
+            rgba(1, 191, 113, 0.15) 100%
+    );
+
+    transform: skewX(-12deg);
+}
+
+
+/* Icon styling */
+.sectionTitle svg {
+    color: #01bf71;
+    font-size: 0.9em;
+}
+
+/* Mobile refinement */
+@media (max-width: 600px) {
+
+    .sectionTitle svg {
+        font-size: 0.8em;
+    }
+
 }
 
 @media screen and (max-width: 960px) {
@@ -108,9 +158,8 @@
     margin-bottom: 0.2rem;
 }
 
-.subTitle strong {
-    color: #01bf71; /* Highlighting key strengths in green */
-    font-weight: 600;
+.subTitle span {
+    color: white; /* Highlighting key strengths in green */
 }
 
 .divider {
@@ -129,4 +178,108 @@
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: left;
+}
+
+.stackGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.categoryCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(12px);
+}
+
+.categoryCard:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(24, 247, 168, 0.2);
+    transform: translateY(-5px);
+}
+
+.categoryInfo {
+    margin-bottom: 30px;
+}
+
+.categoryTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.categorySubtitle {
+    color: #FFFFFFA5;
+    font-size: 1rem;
+}
+
+.pillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skillPill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    color: var(--text-dim);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+
+.skillPill:hover {
+    background: rgba(24, 247, 168, 0.05);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    transform: scale(1.05);
+}
+
+.pillIcon {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pillName {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills {
+        padding: 80px 0;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .categoryCard {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    .categoryTitle {
+        font-size: 1.5rem;
+    }
+
+    .skillPill {
+        padding: 8px 14px;
+    }
+
+    .pillName {
+        font-size: 0.85rem;
+    }
 }

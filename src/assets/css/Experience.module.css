@@ -13,14 +13,55 @@
     margin-bottom: 3rem;
 }
 
-/* Section titles: "Education", "Experience" */
-/* Section titles: "Education", "Experience" */
 .sectionTitle {
+    position: relative; /* REQUIRED for underline */
     font-size: clamp(1.35rem, 2.2vw, 1.75rem);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
     text-align: left;
     letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+/* Handwritten underline */
+.sectionTitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    width: clamp(60px, 18vw, 110px); /* 👈 responsive width */
+    height: 4px;
+    border-radius: 4px;
+
+    background: linear-gradient(
+            90deg,
+            #01bf71 0%,
+            rgba(1, 191, 113, 0.9) 35%,
+            rgba(1, 191, 113, 0.4) 70%,
+            rgba(1, 191, 113, 0.15) 100%
+    );
+
+    transform: skewX(-12deg);
+}
+
+
+/* Icon styling */
+.sectionTitle svg {
+    color: #01bf71;
+    font-size: 0.9em;
+}
+
+/* Mobile refinement */
+@media (max-width: 600px) {
+
+    .sectionTitle svg {
+        font-size: 0.8em;
+    }
+
 }
 
 /* ===== Education ===== */
@@ -121,7 +162,23 @@
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;   /* 🔑 key fix */
+    gap: 6px;              /* spacing between text & icon */
+    line-height: 1;        /* removes baseline mismatch */
 }
+
+.storeIcon {
+    font-size: 0.9em;      /* slightly smaller than text */
+    position: relative;
+    top: 1px;              /* tiny vertical nudge (perfect alignment) */
+}
+
+.pipe {
+    margin: 0 8px;
+    opacity: 0.6;
+}
+
 
 .link:hover {
     color: #4ac1ff; /* bluish tint for hover */
@@ -135,33 +192,6 @@
     pointer-events: none;
     text-shadow: none;
     opacity: 0.7;
-}
-
-/* ===== Responsive ===== */
-@media screen and (max-width: 960px) {
-
-    .fazal {
-        padding: 3rem 0.75rem 4.5rem;
-    }
-
-    .card,
-    .eduBlock {
-        padding: 1.25rem 1.25rem 1.5rem;
-    }
-
-    .company {
-        font-size: 1.35rem;
-    }
-
-    .role {
-        font-size: 1.15rem;
-    }
-
-    .summary,
-    .cardList,
-    .techLine {
-        font-size: 0.95rem;
-    }
 }
 
 /* Company meta line */
@@ -232,4 +262,43 @@
 .eduMajor {
     color: #01bf71;
     font-weight: 650;
+}
+
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 960px) {
+
+    .fazal {
+        padding: 3rem 0.75rem 4.5rem;
+    }
+
+    .card,
+    .eduBlock {
+        padding: 1.25rem 1.25rem 1.5rem;
+    }
+
+    .company {
+        font-size: 1.35rem;
+    }
+
+    .role {
+        font-size: 1.15rem;
+    }
+
+    .summary,
+    .cardList,
+    .techLine {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .link {
+        gap: 4px;
+    }
+
+    .storeIcon {
+        font-size: 0.85em;
+        top: 0;
+    }
 }

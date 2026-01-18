@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import React, {useEffect, useState} from 'react';
+import {FaArrowUp} from 'react-icons/fa';
 import classes from '../assets/css/ScrollToTop.module.css';
 
 const ScrollToTop = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '../assets/css/Footer.module.css';
-import { FaLinkedin, FaGithub, FaStackOverflow, FaYoutube, FaEnvelope } from "react-icons/fa";
+import {FaEnvelope, FaGithub, FaLinkedin, FaStackOverflow, FaYoutube} from "react-icons/fa";
 
 const Footer = () => {
     const email = "fazal.haroon01@gmail.com";

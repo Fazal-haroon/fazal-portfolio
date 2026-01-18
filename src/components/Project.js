@@ -37,7 +37,7 @@ import hrmsImg3 from "../assets/images/hrms3.jpeg"
 import Carousel from 'react-bootstrap/Carousel';
 import "aos/dist/aos.css"
 import Aos from "aos"
-import {FaAndroid, FaApple} from "react-icons/fa";
+import {FaAndroid, FaApple, FaFolderOpen, FaGlobe, FaFileAlt, FaYoutube} from "react-icons/fa";
 
 
 const Project = () => {
@@ -46,7 +46,14 @@ const Project = () => {
     }, []);
     return <>
         <div className={classes.fazal}>
-
+            <section className={classes.section}>
+            <h2
+                className={classes.sectionTitle}
+                data-aos="zoom-in"
+                data-aos-once="true"
+            >
+                <FaFolderOpen /> Projects
+            </h2>
             {/*10th Project*/}
             <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
                 <Carousel fade>
@@ -100,14 +107,14 @@ const Project = () => {
                                 href="https://apps.apple.com/sa/app/almamob/id6475034380"
                                 target="_blank"
                                 rel="noreferrer"
-                            >AlmaMOB <FaApple className={classes.storeIcon}/></a>
+                            > <FaApple className={classes.storeIcon}/> AlmaMOB</a>
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
                             <a
                                 className={classes.link}
                                 href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
                                 target="_blank"
                                 rel="noreferrer"
-                            >AlmaMOB <FaAndroid className={classes.storeIcon}/></a>
+                            > <FaAndroid className={classes.storeIcon}/> AlmaMOB</a>
                         </div>
                         <p className={classes.list}>
                             Developed and maintained Almabani’s AlmaMOB, contributing to both frontend and backend
@@ -170,7 +177,7 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Lending
                             Website</h1>
                         <a className={classes.link} href="https://almabani.com/" target="_blank"
-                           rel="noreferrer">AlmaWebsite</a>
+                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> AlmaWebsite</a>
                         <p className={classes.list}>
                             Developed and maintained Almabani’s website with a dynamic, CMS-driven
                             frontend, delivering an up-to-date and engaging experience for visitors.
@@ -241,13 +248,13 @@ const Project = () => {
                         <div className={classes.linksRow}>
                             <a className={classes.link} href="https://supregistration.almabani.com/" target="_blank"
                                rel="noreferrer">
-                                Vendor Portal
+                                <FaGlobe className={classes.storeIcon} /> Vendor Portal
                             </a>
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
                             <a className={classes.link}
                                href="https://drive.google.com/file/d/1XWYFlvQk77UUok1aCwbgbppsXzecgdyc/view?usp=sharing"
                                target="_blank" rel="noreferrer">
-                                User Manual
+                                <FaFileAlt className={classes.storeIcon} /> User Manual
                             </a>
                         </div>
                         <p className={classes.list}>
@@ -296,7 +303,7 @@ const Project = () => {
                     <div className={classes.content}>
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s ERP</h1>
                         <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
-                           rel="noreferrer">AlmaERP</a>
+                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> AlmaERP</a>
                         <p className={classes.list}>
                             Developed and maintained Almabani’s HRMS ERP, delivering high reliability and strong
                             performance.
@@ -411,7 +418,7 @@ const Project = () => {
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk
                             (WeChat)</h1>
                         <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
-                           rel="noreferrer">TiTalk</a>
+                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> TiTalk</a>
                         <p className={classes.list}>
                             Chat application — microservices architecture; backend services built for scalable,
                             real-time messaging.
@@ -452,7 +459,7 @@ const Project = () => {
                     <div className={classes.content}>
                         <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
                         <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
-                           rel="noreferrer">Tiger</a>
+                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> Tiger</a>
                         <p className={classes.list}>
                             Web-based laboratory management system for a U.S. healthcare organization, streamlining test
                             case and results workflows.
@@ -560,7 +567,7 @@ const Project = () => {
                         </h1>
                         <a className={classes.link} href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q"
                            target="_blank"
-                           rel="noreferrer">Fazal TechWorld</a>
+                           rel="noreferrer"><FaYoutube className={classes.storeIcon} /> Fazal TechWorld</a>
                         <p className={classes.list}>
                             Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+
                             subscribers, primarily targeting beginners and aspiring tech learners
@@ -621,7 +628,8 @@ const Project = () => {
                         <a className={classes.link}
                            target="_blank"
                            rel="noreferrer"
-                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">Fazail-e-Amaal</a>
+                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">
+                            <FaAndroid className={classes.storeIcon}/> Fazail-e-Amaal</a>
                         <p className={classes.list}>
                             Fazail-e-Amaal Islamic Book App.
                         </p>
@@ -632,6 +640,7 @@ const Project = () => {
                     <div/>
                 </div>
             </div>
+            </section>
         </div>
     </>;
 };
