@@ -17,7 +17,7 @@ const Navbar = () => {
                 <a style={{textDecoration: 'inherit'}}
                    href='https://drive.google.com/file/d/1pqBbe7bLNwZ9ZnBYMYN1bHy7FogVth9p/view?usp=sharing'
                    target="_blank" rel="noreferrer">
-                    RESUME <FaFileInvoice className={classes.navIcon} />
+                    RESUME <FaFileInvoice className={classes.navIcon}/>
                 </a>
             </h2>
 

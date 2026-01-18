@@ -37,7 +37,7 @@ import hrmsImg3 from "../assets/images/hrms3.jpeg"
 import Carousel from 'react-bootstrap/Carousel';
 import "aos/dist/aos.css"
 import Aos from "aos"
-import {FaAndroid, FaApple, FaFolderOpen, FaGlobe, FaFileAlt, FaYoutube} from "react-icons/fa";
+import {FaAndroid, FaApple, FaFileAlt, FaFolderOpen, FaGlobe, FaYoutube} from "react-icons/fa";
 
 
 const Project = () => {
@@ -47,599 +47,611 @@ const Project = () => {
     return <>
         <div className={classes.fazal}>
             <section className={classes.section}>
-            <h2
-                className={classes.sectionTitle}
-                data-aos="zoom-in"
-                data-aos-once="true"
-            >
-                <FaFolderOpen /> Projects
-            </h2>
-            {/*10th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={mob1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                <h2
+                    className={classes.sectionTitle}
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                >
+                    <FaFolderOpen/> Projects
+                </h2>
+                {/*10th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={mob1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={mob2}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={mob2}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={mob3}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={mob3}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={mob4}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={mob4}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Mobile</h1>
-                        <div className={classes.linksRow}>
-                            <a
-                                className={classes.link}
-                                href="https://apps.apple.com/sa/app/almamob/id6475034380"
-                                target="_blank"
-                                rel="noreferrer"
-                            > <FaApple className={classes.storeIcon}/> AlmaMOB</a>
-                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
-                            <a
-                                className={classes.link}
-                                href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
-                                target="_blank"
-                                rel="noreferrer"
-                            > <FaAndroid className={classes.storeIcon}/> AlmaMOB</a>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Mobile</h1>
+                            <div className={classes.linksRow}>
+                                <a
+                                    className={classes.link}
+                                    href="https://apps.apple.com/sa/app/almamob/id6475034380"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                > <FaApple className={classes.storeIcon}/> AlmaMOB</a>
+                                <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+                                <a
+                                    className={classes.link}
+                                    href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                > <FaAndroid className={classes.storeIcon}/> AlmaMOB</a>
+                            </div>
+                            <p className={classes.list}>
+                                Developed and maintained Almabani’s AlmaMOB, contributing to both frontend and backend
+                                development to deliver a smooth, responsive, and user-friendly experience. </p>
+                            <li className={classes.list}>
+                                Tech: AlmaErp Backend · Mobile Application Development · Ionic Framework · Angular ·
+                                REST
+                                APIs · WebStorm · MySQL · Xcode · Git · Jira
+                            </li>
                         </div>
-                        <p className={classes.list}>
-                            Developed and maintained Almabani’s AlmaMOB, contributing to both frontend and backend
-                            development to deliver a smooth, responsive, and user-friendly experience. </p>
-                        <li className={classes.list}>
-                            Tech: AlmaErp Backend · Mobile Application Development · Ionic Framework · Angular · REST
-                            APIs · WebStorm · MySQL · Xcode · Git · Jira
-                        </li>
+                        <div/>
                     </div>
-                    <div/>
                 </div>
-            </div>
 
-            {/*9th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={lending1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                {/*9th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={lending1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={lending2}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={lending2}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={lending3}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={lending3}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={lending4}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={lending4}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Lending
-                            Website</h1>
-                        <a className={classes.link} href="https://almabani.com/" target="_blank"
-                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> AlmaWebsite</a>
-                        <p className={classes.list}>
-                            Developed and maintained Almabani’s website with a dynamic, CMS-driven
-                            frontend, delivering an up-to-date and engaging experience for visitors.
-                        </p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Lending
+                                Website</h1>
+                            <a className={classes.link} href="https://almabani.com/" target="_blank"
+                               rel="noreferrer"><FaGlobe className={classes.storeIcon}/> AlmaWebsite</a>
+                            <p className={classes.list}>
+                                Developed and maintained Almabani’s website with a dynamic, CMS-driven
+                                frontend, delivering an up-to-date and engaging experience for visitors.
+                            </p>
 
-                        <li className={classes.list}>
-                            Implemented a REST API–based architecture with a Laravel backend and
-                            Angular frontend, enabling fully dynamic pages and content management
-                            backed by MySQL.
-                        </li>
+                            <li className={classes.list}>
+                                Implemented a REST API–based architecture with a Laravel backend and
+                                Angular frontend, enabling fully dynamic pages and content management
+                                backed by MySQL.
+                            </li>
 
-                        <li className={classes.list}>
-                            Tech: PHP · Laravel · Angular · REST APIs · MySQL · Git · Jira · WebStorm · PhpStorm
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-
-            {/*8th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={vendor1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={vendor2}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={vendor3}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={vendor4}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Vendor
-                            Portal</h1>
-                        <div className={classes.linksRow}>
-                            <a className={classes.link} href="https://supregistration.almabani.com/" target="_blank"
-                               rel="noreferrer">
-                                <FaGlobe className={classes.storeIcon} /> Vendor Portal
-                            </a>
-                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
-                            <a className={classes.link}
-                               href="https://drive.google.com/file/d/1XWYFlvQk77UUok1aCwbgbppsXzecgdyc/view?usp=sharing"
-                               target="_blank" rel="noreferrer">
-                                <FaFileAlt className={classes.storeIcon} /> User Manual
-                            </a>
+                            <li className={classes.list}>
+                                Tech: PHP · Laravel · Angular · REST APIs · MySQL · Git · Jira · WebStorm · PhpStorm
+                            </li>
                         </div>
-                        <p className={classes.list}>
-                            Built the Supplier/Vendor Portal from scratch, enabling seamless supplier onboarding and
-                            communication.
-                        </p>
-                        <li className={classes.list}>
-                            Enhanced procurement workflows including PR, RFQ, Quotations, CBT — Bid Comparison, and PO
-                            management.
-                        </li>
-                        <li className={classes.list}>
-                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot ·
-                            Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL ·
-                            JasperReports · Git · Jira
-                        </li>
+                        <div/>
                     </div>
-                    <div/>
                 </div>
-            </div>
 
-            {/*7th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={almaerp}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                {/*8th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={vendor1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={almaerp1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={vendor2}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s ERP</h1>
-                        <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
-                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> AlmaERP</a>
-                        <p className={classes.list}>
-                            Developed and maintained Almabani’s HRMS ERP, delivering high reliability and strong
-                            performance.
-                        </p>
-                        <li className={classes.list}>
-                            Security & Integration: Focused on reliability, performance, and comprehensive security
-                            across each layer of the system, ensuring safe integrations and consistent operation.
-                        </li>
-                        <li className={classes.list}>
-                            Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot ·
-                            Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL ·
-                            JasperReports · Git · Jira
-                        </li>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={vendor3}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={vendor4}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s Vendor
+                                Portal</h1>
+                            <div className={classes.linksRow}>
+                                <a className={classes.link} href="https://supregistration.almabani.com/" target="_blank"
+                                   rel="noreferrer">
+                                    <FaGlobe className={classes.storeIcon}/> Vendor Portal
+                                </a>
+                                <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+                                <a className={classes.link}
+                                   href="https://drive.google.com/file/d/1XWYFlvQk77UUok1aCwbgbppsXzecgdyc/view?usp=sharing"
+                                   target="_blank" rel="noreferrer">
+                                    <FaFileAlt className={classes.storeIcon}/> User Manual
+                                </a>
+                            </div>
+                            <p className={classes.list}>
+                                Built the Supplier/Vendor Portal from scratch, enabling seamless supplier onboarding and
+                                communication.
+                            </p>
+                            <li className={classes.list}>
+                                Enhanced procurement workflows including PR, RFQ, Quotations, CBT — Bid Comparison, and
+                                PO
+                                management.
+                            </li>
+                            <li className={classes.list}>
+                                Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot ·
+                                Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL ·
+                                JasperReports · Git · Jira
+                            </li>
+                        </div>
+                        <div/>
                     </div>
-                    <div/>
                 </div>
-            </div>
 
-            {/*6th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
+                {/*7th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={almaerp}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={almaerp1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Almabani’s ERP</h1>
+                            <a className={classes.link} href="https://erp.almabani.com/" target="_blank"
+                               rel="noreferrer"><FaGlobe className={classes.storeIcon}/> AlmaERP</a>
+                            <p className={classes.list}>
+                                Developed and maintained Almabani’s HRMS ERP, delivering high reliability and strong
+                                performance.
+                            </p>
+                            <li className={classes.list}>
+                                Security & Integration: Focused on reliability, performance, and comprehensive security
+                                across each layer of the system, ensuring safe integrations and consistent operation.
+                            </li>
+                            <li className={classes.list}>
+                                Tech: Java 11 · Spring Framework · Hibernate · OpenAPI/Swagger · Lombok · Spring Boot ·
+                                Maven · Gradle · IntelliJ IDEA · WebStorm · TypeScript · JavaScript · Angular · MySQL ·
+                                JasperReports · Git · Jira
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+
+                {/*6th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={globalpay1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={globalpay2}
+                                alt="Second slide"
+                            />
+
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={globalpay3}
+                                alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item><Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={globalpay1}
-                            alt="First slide"
+                            src={globalpay4}
+                            alt="fourth slide"
                         />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={globalpay2}
-                            alt="Second slide"
-                        />
-
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={globalpay3}
-                            alt="Third slide"
-                        />
-
                         <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item><Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={globalpay4}
-                        alt="fourth slide"
-                    />
-                    <Carousel.Caption>
-                    </Carousel.Caption>
-                </Carousel.Item><Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={globalpay5}
-                        alt="fifth slide"
-                    />
-
-                    <Carousel.Caption>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway</h1>
-                        <p className={classes.link} href="">GlobalPay</p>
-                        <p className={classes.list}>
-                            Payment gateway system — monolithic architecture; full-stack delivery with Angular
-                            (frontend) and Spring Boot (backend).
-                        </p>
-                        <li className={classes.list}>
-                            Tech: Java 8 · RESTful Web Services · Spring Framework · Hibernate · OpenAPI/Swagger ·
-                            Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub ·
-                            Jira
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-
-            {/*5th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={titalk1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={titalk2}
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application - TiTalk
-                            (WeChat)</h1>
-                        <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
-                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> TiTalk</a>
-                        <p className={classes.list}>
-                            Chat application — microservices architecture; backend services built for scalable,
-                            real-time messaging.
-                        </p>
-                        <li className={classes.list}>
-                            Tech: Java 8 · IntelliJ IDEA · RESTful Web Services · Spring Framework · MyBatis ·
-                            OpenAPI/Swagger · Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular ·
-                            Oracle · MySQL · Git · Jira · ZenTao Project Management System
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-            {/*4th Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={tigerImg1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={tigerImg2}
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
-                        <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
-                           rel="noreferrer"><FaGlobe className={classes.storeIcon} /> Tiger</a>
-                        <p className={classes.list}>
-                            Web-based laboratory management system for a U.S. healthcare organization, streamlining test
-                            case and results workflows.
-                        </p>
-                        <li className={classes.list}>
-                            Tech: Java 8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins (CI/CD) · Jira
-                            · Mirth Connect · Linux
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-            {/*3rd Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={hrmsImg1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={hrmsImg2}
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={hrmsImg3}
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HR Management System</h1>
-                        <p className={classes.link} href="">Final Year University Project</p>
-                        <p className={classes.list}>
-                            Final Year Project — microservices-based Human Resource Management System (UET Peshawar).
-                        </p>
-                        <li className={classes.list}>
-                            Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway · Netflix
-                            Eureka · Netflix Hystrix · Spring Data JPA · React · JavaScript · MySQL · Maven ·
-                            Microservices Architecture
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-            {/*2nd Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={ytImgU1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={ytImg1}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={ytImg2}
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={ytImg3}
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">
-                            Content Creator / Mentor
-                        </h1>
-                        <a className={classes.link} href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q"
-                           target="_blank"
-                           rel="noreferrer"><FaYoutube className={classes.storeIcon} /> Fazal TechWorld</a>
-                        <p className={classes.list}>
-                            Created educational and tutorial-based content for a tech-focused YouTube channel with 23K+
-                            subscribers, primarily targeting beginners and aspiring tech learners
-                        </p>
-                        <li className={classes.list}>
-                            Technologies & Tools: YouTube · Adobe Premiere Pro · VideoScribe · Camtasia · Snagit · Canva
-                            · Snappa
-                        </li>
-                    </div>
-                    <div/>
-                </div>
-            </div>
-            {/*1st Project*/}
-            <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={fazaleamaal}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={fazaleamaal2}
-                            alt="Second slide"
+                            src={globalpay5}
+                            alt="fifth slide"
                         />
 
                         <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={fazaleamaal3}
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={fazaleamaal4}
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <div className={classes.pro}>
-                    <div className={classes.content}>
-                        <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Fazail e Amaal</h1>
-                        <a className={classes.link}
-                           target="_blank"
-                           rel="noreferrer"
-                           href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">
-                            <FaAndroid className={classes.storeIcon}/> Fazail-e-Amaal</a>
-                        <p className={classes.list}>
-                            Fazail-e-Amaal Islamic Book App.
-                        </p>
-                        <li className={classes.list}>
-                            Tech: Java · OOP · Android Studio · Android SDK · XML · SQLite
-                        </li>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Payment Gateway</h1>
+                            <p className={classes.link} href="">GlobalPay</p>
+                            <p className={classes.list}>
+                                Payment gateway system — monolithic architecture; full-stack delivery with Angular
+                                (frontend) and Spring Boot (backend).
+                            </p>
+                            <li className={classes.list}>
+                                Tech: Java 8 · RESTful Web Services · Spring Framework · Hibernate · OpenAPI/Swagger ·
+                                Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular · MySQL · GitHub
+                                ·
+                                Jira
+                            </li>
+                        </div>
+                        <div/>
                     </div>
-                    <div/>
                 </div>
-            </div>
+
+                {/*5th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={titalk1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={titalk2}
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Chat Application -
+                                TiTalk
+                                (WeChat)</h1>
+                            <a className={classes.link} href="https://ltsql.ql-lts888666.com/login" target="_blank"
+                               rel="noreferrer"><FaGlobe className={classes.storeIcon}/> TiTalk</a>
+                            <p className={classes.list}>
+                                Chat application — microservices architecture; backend services built for scalable,
+                                real-time messaging.
+                            </p>
+                            <li className={classes.list}>
+                                Tech: Java 8 · IntelliJ IDEA · RESTful Web Services · Spring Framework · MyBatis ·
+                                OpenAPI/Swagger · Lombok · Spring Boot · JWT · Maven · TypeScript · JavaScript · Angular
+                                ·
+                                Oracle · MySQL · Git · Jira · ZenTao Project Management System
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+                {/*4th Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={tigerImg1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={tigerImg2}
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Healthcare - Tiger</h1>
+                            <a className={classes.link} href="https://tiger.siparadigm.com/tiger/" target="_blank"
+                               rel="noreferrer"><FaGlobe className={classes.storeIcon}/> Tiger</a>
+                            <p className={classes.list}>
+                                Web-based laboratory management system for a U.S. healthcare organization, streamlining
+                                test
+                                case and results workflows.
+                            </p>
+                            <li className={classes.list}>
+                                Tech: Java 8 · JSF · PrimeFaces · Hibernate · Spring Boot · MariaDB · Jenkins (CI/CD) ·
+                                Jira
+                                · Mirth Connect · Linux
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+                {/*3rd Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-32rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={hrmsImg1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={hrmsImg2}
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={hrmsImg3}
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">HR Management
+                                System</h1>
+                            <p className={classes.link} href="">Final Year University Project</p>
+                            <p className={classes.list}>
+                                Final Year Project — microservices-based Human Resource Management System (UET
+                                Peshawar).
+                            </p>
+                            <li className={classes.list}>
+                                Tech: Java 8 · OOP · Spring · Spring Boot · Spring Security · Spring Cloud Gateway ·
+                                Netflix
+                                Eureka · Netflix Hystrix · Spring Data JPA · React · JavaScript · MySQL · Maven ·
+                                Microservices Architecture
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+                {/*2nd Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={ytImgU1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={ytImg1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={ytImg2}
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={ytImg3}
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">
+                                Content Creator / Mentor
+                            </h1>
+                            <a className={classes.link} href="https://www.youtube.com/channel/UC2dVZU2FEe-JEXr7L8grk6Q"
+                               target="_blank"
+                               rel="noreferrer"><FaYoutube className={classes.storeIcon}/> Fazal TechWorld</a>
+                            <p className={classes.list}>
+                                Created educational and tutorial-based content for a tech-focused YouTube channel with
+                                23K+
+                                subscribers, primarily targeting beginners and aspiring tech learners
+                            </p>
+                            <li className={classes.list}>
+                                Technologies & Tools: YouTube · Adobe Premiere Pro · VideoScribe · Camtasia · Snagit ·
+                                Canva
+                                · Snappa
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+                {/*1st Project*/}
+                <div className={`${classes.img} ${classes.section}`} style={{marginTop: "-25rem"}}>
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={fazaleamaal}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={fazaleamaal2}
+                                alt="Second slide"
+                            />
+
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={fazaleamaal3}
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={fazaleamaal4}
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div className={classes.pro}>
+                        <div className={classes.content}>
+                            <h1 className={classes.head} data-aos-once="true" data-aos="zoom-in">Fazail e Amaal</h1>
+                            <a className={classes.link}
+                               target="_blank"
+                               rel="noreferrer"
+                               href="https://play.google.com/store/apps/details?id=com.fazail.amaal.fazailsadqat.fazailedarood.fazailquran.fazailhaj.fazailamaal&hl=en_US&gl=US">
+                                <FaAndroid className={classes.storeIcon}/> Fazail-e-Amaal</a>
+                            <p className={classes.list}>
+                                Fazail-e-Amaal Islamic Book App.
+                            </p>
+                            <li className={classes.list}>
+                                Tech: Java · OOP · Android Studio · Android SDK · XML · SQLite
+                            </li>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
             </section>
         </div>
     </>;

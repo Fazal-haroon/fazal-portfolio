@@ -11,16 +11,16 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (<>
-        <Navbar />
+        <Navbar/>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="*" element={<Home />} />
+            <Route path="/" element={<Home/>}/>
+            <Route path="/skills" element={<Skills/>}/>
+            <Route path="/project" element={<Project/>}/>
+            <Route path="/experience" element={<Experience/>}/>
+            <Route path="*" element={<Home/>}/>
         </Routes>
-        <Footer />
-        <ScrollToTop />
+        <Footer/>
+        <ScrollToTop/>
     </>);
 }
 

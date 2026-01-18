@@ -163,15 +163,15 @@
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
     display: inline-flex;
-    align-items: center;   /* 🔑 key fix */
-    gap: 6px;              /* spacing between text & icon */
-    line-height: 1;        /* removes baseline mismatch */
+    align-items: center; /* 🔑 key fix */
+    gap: 6px; /* spacing between text & icon */
+    line-height: 1; /* removes baseline mismatch */
 }
 
 .storeIcon {
-    font-size: 0.9em;      /* slightly smaller than text */
+    font-size: 0.9em; /* slightly smaller than text */
     position: relative;
-    top: 1px;              /* tiny vertical nudge (perfect alignment) */
+    top: 1px; /* tiny vertical nudge (perfect alignment) */
 }
 
 .pipe {

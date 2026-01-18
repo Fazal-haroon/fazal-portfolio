@@ -73,6 +73,7 @@
     .socialContainer {
         gap: 20px;
     }
+
     /* On very small phones, keep the padding */
     .footer {
         padding: 15px 0;

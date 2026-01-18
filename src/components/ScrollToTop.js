@@ -36,7 +36,7 @@ const ScrollToTop = () => {
         <div className={classes.scrollToTop}>
             {isVisible && (
                 <div onClick={scrollToTop} className={classes.iconContainer}>
-                    <FaArrowUp className={classes.icon} />
+                    <FaArrowUp className={classes.icon}/>
                 </div>
             )}
         </div>

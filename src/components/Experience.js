@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import classes from '../assets/css/Experience.module.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
-import { FaAndroid, FaApple, FaGlobe, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import {FaAndroid, FaApple, FaBriefcase, FaGlobe, FaGraduationCap} from 'react-icons/fa';
 
 const Experience = () => {
     useEffect(() => {
@@ -37,7 +37,7 @@ const Experience = () => {
                     data-aos="zoom-in"
                     data-aos-once="true"
                 >
-                    <FaGraduationCap /> Education
+                    <FaGraduationCap/> Education
                 </h2>
 
                 <div className={classes.cardsColumn}>
@@ -92,7 +92,7 @@ const Experience = () => {
                     data-aos="zoom-in"
                     data-aos-once="true"
                 >
-                    <FaBriefcase /> Experience
+                    <FaBriefcase/> Experience
                 </h2>
                 <div className={classes.cardsColumn}>
 
@@ -211,7 +211,7 @@ const Experience = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FaApple className={classes.storeIcon} /> AlmaMOB
+                                <FaApple className={classes.storeIcon}/> AlmaMOB
                             </a>
 
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
@@ -221,7 +221,7 @@ const Experience = () => {
                                 href="https://play.google.com/store/apps/details?id=com.almabani.mobile.app&hl=en_US"
                                 target="_blank"
                                 rel="noreferrer"
-                            ><FaAndroid className={classes.storeIcon} /> AlmaMOB
+                            ><FaAndroid className={classes.storeIcon}/> AlmaMOB
                             </a>
 
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
@@ -232,7 +232,7 @@ const Experience = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FaGlobe className={classes.storeIcon} /> AlmaWebsite
+                                <FaGlobe className={classes.storeIcon}/> AlmaWebsite
                             </a>
 
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
@@ -243,7 +243,7 @@ const Experience = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FaGlobe className={classes.storeIcon} /> Vendor Portal
+                                <FaGlobe className={classes.storeIcon}/> Vendor Portal
                             </a>
 
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
@@ -254,7 +254,7 @@ const Experience = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FaGlobe className={classes.storeIcon} /> AlmaERP
+                                <FaGlobe className={classes.storeIcon}/> AlmaERP
                             </a>
 
                         </div>
@@ -384,7 +384,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaGlobe className={classes.storeIcon} /> TiTalk
+                            <FaGlobe className={classes.storeIcon}/> TiTalk
                         </a>
                     </article>
 
@@ -559,7 +559,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaGlobe className={classes.storeIcon} /> Tiger
+                            <FaGlobe className={classes.storeIcon}/> Tiger
                         </a>
                     </article>
 
@@ -617,7 +617,7 @@ const Experience = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaAndroid className={classes.storeIcon} /> Fazail-e-Amaal
+                            <FaAndroid className={classes.storeIcon}/> Fazail-e-Amaal
                         </a>
                     </article>
                 </div>
