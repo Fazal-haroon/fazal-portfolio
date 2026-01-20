@@ -17,3 +17,20 @@ code {
 }
 
 
+:root {
+    /* ===== Accent Color System ===== */
+    --accent: #01bf71;
+
+    /* Soft glow version of accent */
+    --accent-glow: rgba(1, 191, 113, 0.35);
+
+    /* ===== Text Colors ===== */
+    --text-main: #ffffff;
+    --text-dim: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+
+    /* ===== Background Layers ===== */
+    --bg-main: #000000;
+    --bg-card: #0d0d0d;
+    --bg-card-soft: rgba(255, 255, 255, 0.03);
+}

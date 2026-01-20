@@ -1,9 +1,62 @@
+/* Page wrapper */
 .fazal {
-    display: flow-root;
     background: #000;
     color: #fff;
     min-height: calc(100vh - 140px);
-    padding: 4rem 1rem 6rem;
+    padding: 4rem 1rem 4rem;
+}
+
+/* ================================ */
+/* AMBIENT GLOW SYSTEM (BIG PAGES) */
+/* ================================ */
+
+.fazal {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+/* GLOBAL AMBIENT GLOW */
+.fazal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        /* top glow */
+            radial-gradient(
+                    circle at 50% 0%,
+                    rgba(1, 191, 113, 0.10),
+                    transparent 45%
+            ),
+
+                /* mid-left glow */
+            radial-gradient(
+                    circle at 15% 35%,
+                    rgba(1, 191, 113, 0.08),
+                    transparent 45%
+            ),
+
+                /* mid-right glow */
+            radial-gradient(
+                    circle at 85% 50%,
+                    rgba(1, 191, 113, 0.06),
+                    transparent 45%
+            ),
+
+                /* bottom glow */
+            radial-gradient(
+                    circle at 50% 100%,
+                    rgba(1, 191, 113, 0.10),
+                    transparent 55%
+            );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section {
+    position: relative;
+    z-index: 1;
 }
 
 /* THE CARD STYLE FROM PROJECT.JS */

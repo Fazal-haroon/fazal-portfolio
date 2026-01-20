@@ -110,6 +110,184 @@
     }
 }
 
+/* ============================= */
+/* PREMIUM SPLASH INTRO (CSS ONLY) */
+/* ============================= */
+
+/* 1) Background "splash burst" behind everything */
+.fazal {
+    position: relative;
+    overflow: hidden; /* prevents glow artifacts */
+}
+
+/* Light bloom from center */
+.fazal::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background:
+            radial-gradient(circle at 50% 45%,
+            rgba(1, 191, 113, 0.14) 0%,
+            rgba(1, 191, 113, 0.06) 18%,
+            rgba(255, 255, 255, 0.03) 35%,
+            rgba(0, 0, 0, 0) 60%);
+    opacity: 0;
+    transform: scale(0.78);
+    animation: bgBloom 900ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* subtle moving grain sheen (very light) */
+.fazal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            radial-gradient(circle at 20% 20%, rgba(255,255,255,0.02), transparent 35%),
+            radial-gradient(circle at 80% 60%, rgba(255,255,255,0.015), transparent 40%);
+    opacity: 0;
+    animation: bgSheen 1400ms ease forwards;
+    animation-delay: 300ms;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Make sure real content stays above */
+.img,
+.heading {
+    position: relative;
+    z-index: 1;
+}
+
+/* 2) Avatar reveal (premium mask + subtle overshoot) */
+.img {
+    opacity: 0;
+
+    /* Start slightly smaller + slightly higher, feels intentional */
+    transform: translate3d(0, 14px, 0) scale(0.78);
+    filter: blur(8px);
+
+    /* Circle reveal */
+    clip-path: circle(0% at 50% 50%);
+
+    animation: avatarReveal 780ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+    will-change: transform, opacity, filter, clip-path;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+
+    /* Base shadow stays elegant */
+    box-shadow:
+            0 18px 70px rgba(0, 0, 0, 0.55);
+}
+
+
+/* 3) Clean pulse ring using outline + shadow (no pseudo-elements needed) */
+@keyframes avatarReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(26px) scale(0.58);
+        filter: blur(14px);
+        clip-path: circle(0% at 50% 50%);
+        box-shadow:
+                0 0 0 0 rgba(1, 191, 113, 0.0),
+                0 18px 70px rgba(0, 0, 0, 0.55);
+    }
+    45% {
+        opacity: 1;
+        transform: translateY(0px) scale(1.06);
+        filter: blur(2px);
+        clip-path: circle(70% at 50% 50%);
+        box-shadow:
+                0 0 0 10px rgba(1, 191, 113, 0.08),
+                0 22px 80px rgba(0, 0, 0, 0.65);
+    }
+    70% {
+        transform: translateY(0px) scale(0.985);
+        filter: blur(0);
+        clip-path: circle(120% at 50% 50%);
+        box-shadow:
+                0 0 0 16px rgba(1, 191, 113, 0.05),
+                0 22px 80px rgba(0, 0, 0, 0.65);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        filter: blur(0);
+        clip-path: circle(140% at 50% 50%);
+        box-shadow:
+                0 0 0 0 rgba(1, 191, 113, 0.0),
+                0 18px 70px rgba(0, 0, 0, 0.55);
+    }
+}
+
+/* 4) Content reveal: smooth and premium */
+.heading {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+    animation: contentFade 700ms ease forwards;
+    animation-delay: 520ms;
+    will-change: transform, opacity, filter;
+}
+
+.head,
+.subhead,
+.about,
+.icon {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: itemUp 600ms ease forwards;
+    will-change: transform, opacity;
+}
+
+.head { animation-delay: 920ms; }
+.subhead { animation-delay: 1040ms; }
+.about { animation-delay: 1160ms; }
+.icon { animation-delay: 1280ms; }
+
+/* Background animations */
+@keyframes bgBloom {
+    0% { opacity: 0; transform: scale(0.75); }
+    35% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.9; transform: scale(1.06); }
+}
+
+@keyframes bgSheen {
+    0% { opacity: 0; transform: translateY(10px); }
+    60% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0.85; transform: translateY(0); }
+}
+
+@keyframes contentFade {
+    from { opacity: 0; transform: translateY(14px); filter: blur(6px); }
+    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes itemUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 5) Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .fazal::before,
+    .fazal::after,
+    .img,
+    .heading,
+    .head,
+    .subhead,
+    .about,
+    .icon {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        clip-path: none !important;
+    }
+}
+
 
 @media screen and (max-width: 960px) {
     .fazal {
