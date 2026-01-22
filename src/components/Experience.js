@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import classes from '../assets/css/Experience.module.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
-import {FaAndroid, FaApple, FaBriefcase, FaGlobe, FaGraduationCap} from 'react-icons/fa';
+import {FaAndroid, FaApple, FaBriefcase, FaFileAlt, FaGlobe, FaGraduationCap} from 'react-icons/fa';
 
 const Experience = () => {
     useEffect(() => {
@@ -228,6 +228,17 @@ const Experience = () => {
 
                             <a
                                 className={classes.link}
+                                href="https://erp.almabani.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaGlobe className={classes.storeIcon}/> AlmaERP
+                            </a>
+
+                            <span className={classes.pipe}>&nbsp;|&nbsp;</span>
+
+                            <a
+                                className={classes.link}
                                 href="https://almabani.com/"
                                 target="_blank"
                                 rel="noreferrer"
@@ -248,13 +259,10 @@ const Experience = () => {
 
                             <span className={classes.pipe}>&nbsp;|&nbsp;</span>
 
-                            <a
-                                className={classes.link}
-                                href="https://erp.almabani.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <FaGlobe className={classes.storeIcon}/> AlmaERP
+                            <a className={classes.link}
+                               href="https://drive.google.com/file/d/1XWYFlvQk77UUok1aCwbgbppsXzecgdyc/view?usp=sharing"
+                               target="_blank" rel="noreferrer">
+                                <FaFileAlt className={classes.storeIcon}/> User Manual
                             </a>
 
                         </div>

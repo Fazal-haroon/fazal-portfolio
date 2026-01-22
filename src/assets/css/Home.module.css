@@ -125,12 +125,11 @@
     content: "";
     position: absolute;
     inset: -40%;
-    background:
-            radial-gradient(circle at 50% 45%,
-            rgba(1, 191, 113, 0.14) 0%,
-            rgba(1, 191, 113, 0.06) 18%,
-            rgba(255, 255, 255, 0.03) 35%,
-            rgba(0, 0, 0, 0) 60%);
+    background: radial-gradient(circle at 50% 45%,
+    rgba(1, 191, 113, 0.14) 0%,
+    rgba(1, 191, 113, 0.06) 18%,
+    rgba(255, 255, 255, 0.03) 35%,
+    rgba(0, 0, 0, 0) 60%);
     opacity: 0;
     transform: scale(0.78);
     animation: bgBloom 900ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -143,9 +142,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:
-            radial-gradient(circle at 20% 20%, rgba(255,255,255,0.02), transparent 35%),
-            radial-gradient(circle at 80% 60%, rgba(255,255,255,0.015), transparent 40%);
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.02), transparent 35%),
+    radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.015), transparent 40%);
     opacity: 0;
     animation: bgSheen 1400ms ease forwards;
     animation-delay: 300ms;
@@ -178,8 +176,7 @@
     transform-style: preserve-3d;
 
     /* Base shadow stays elegant */
-    box-shadow:
-            0 18px 70px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 18px 70px rgba(0, 0, 0, 0.55);
 }
 
 
@@ -190,35 +187,31 @@
         transform: translateY(26px) scale(0.58);
         filter: blur(14px);
         clip-path: circle(0% at 50% 50%);
-        box-shadow:
-                0 0 0 0 rgba(1, 191, 113, 0.0),
-                0 18px 70px rgba(0, 0, 0, 0.55);
+        box-shadow: 0 0 0 0 rgba(1, 191, 113, 0.0),
+        0 18px 70px rgba(0, 0, 0, 0.55);
     }
     45% {
         opacity: 1;
         transform: translateY(0px) scale(1.06);
         filter: blur(2px);
         clip-path: circle(70% at 50% 50%);
-        box-shadow:
-                0 0 0 10px rgba(1, 191, 113, 0.08),
-                0 22px 80px rgba(0, 0, 0, 0.65);
+        box-shadow: 0 0 0 10px rgba(1, 191, 113, 0.08),
+        0 22px 80px rgba(0, 0, 0, 0.65);
     }
     70% {
         transform: translateY(0px) scale(0.985);
         filter: blur(0);
         clip-path: circle(120% at 50% 50%);
-        box-shadow:
-                0 0 0 16px rgba(1, 191, 113, 0.05),
-                0 22px 80px rgba(0, 0, 0, 0.65);
+        box-shadow: 0 0 0 16px rgba(1, 191, 113, 0.05),
+        0 22px 80px rgba(0, 0, 0, 0.65);
     }
     100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
         filter: blur(0);
         clip-path: circle(140% at 50% 50%);
-        box-shadow:
-                0 0 0 0 rgba(1, 191, 113, 0.0),
-                0 18px 70px rgba(0, 0, 0, 0.55);
+        box-shadow: 0 0 0 0 rgba(1, 191, 113, 0.0),
+        0 18px 70px rgba(0, 0, 0, 0.55);
     }
 }
 
@@ -242,32 +235,75 @@
     will-change: transform, opacity;
 }
 
-.head { animation-delay: 920ms; }
-.subhead { animation-delay: 1040ms; }
-.about { animation-delay: 1160ms; }
-.icon { animation-delay: 1280ms; }
+.head {
+    animation-delay: 920ms;
+}
+
+.subhead {
+    animation-delay: 1040ms;
+}
+
+.about {
+    animation-delay: 1160ms;
+}
+
+.icon {
+    animation-delay: 1280ms;
+}
 
 /* Background animations */
 @keyframes bgBloom {
-    0% { opacity: 0; transform: scale(0.75); }
-    35% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0.9; transform: scale(1.06); }
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    35% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.9;
+        transform: scale(1.06);
+    }
 }
 
 @keyframes bgSheen {
-    0% { opacity: 0; transform: translateY(10px); }
-    60% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0.85; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.85;
+        transform: translateY(0);
+    }
 }
 
 @keyframes contentFade {
-    from { opacity: 0; transform: translateY(14px); filter: blur(6px); }
-    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 @keyframes itemUp {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* 5) Reduced motion support */
