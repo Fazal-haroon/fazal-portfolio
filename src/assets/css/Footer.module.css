@@ -53,6 +53,89 @@
     font-size: 0.85rem;
 }
 
+.emailContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    margin-right: 0;
+}
+
+/* Mail link */
+.emailLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+/* Important: prevent icon from being copied as weird symbols */
+.emailIcon {
+    display: inline-flex;
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none; /* so only the link text behaves */
+}
+
+.emailText {
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+/* Copy button */
+.copyBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* REMOVE layout expansion */
+    margin: 0;
+    padding: 0;
+    width: 28px; /* fixed small size */
+    height: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.05);
+    color: inherit;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: background 0.12s ease, border-color 0.12s ease,
+    transform 0.08s ease;
+}
+
+.copyBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+.copyBtn:active {
+    transform: scale(0.96);
+}
+
+.copyIcon {
+    display: inline-flex;
+    font-size: 0.85rem;
+    line-height: 1;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* ChatGPT-like “copied” state */
+.copied {
+    border-color: rgba(46, 204, 113, 0.6);
+    background: rgba(46, 204, 113, 0.15);
+}
+
+.copyLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+
 /* --- DESKTOP VIEW (Big Screens) --- */
 /* When screen is wider than 768px, switch to row layout */
 @media screen and (min-width: 768px) {
@@ -65,6 +148,10 @@
 
     .socialContainer {
         margin-bottom: 0; /* Remove the gap since they are not stacked anymore */
+    }
+
+    .emailContainer {
+        margin-right: 18px; /* adjust 36–60 if needed */
     }
 }
 

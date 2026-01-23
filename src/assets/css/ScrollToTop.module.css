@@ -1,6 +1,6 @@
 .scrollToTop {
     position: fixed;
-    bottom: 40px;
+    bottom: 50px;
     right: 40px;
     z-index: 1000;
     cursor: pointer;
@@ -77,5 +77,10 @@
 
     .icon {
         font-size: 0.9rem;
+    }
+
+    .scrollToTop {
+        bottom: 70px; /* was 20px */
+        right: 20px;
     }
 }
