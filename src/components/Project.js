@@ -6,6 +6,7 @@ import vendor1 from "../assets/images/vendor1.png"
 import vendor2 from "../assets/images/vendor2.png"
 import vendor3 from "../assets/images/vendor3.png"
 import vendor4 from "../assets/images/vendor4.png"
+import vendor5 from "../assets/images/vendor5.png"
 import lending1 from "../assets/images/lending1.png"
 import lending2 from "../assets/images/lending2.png"
 import lending3 from "../assets/images/lending3.png"
@@ -201,6 +202,16 @@ const Project = () => {
                 {/*8th Project*/}
                 <div className={`${classes.img} ${classes.section}`} style={{marginTop: "00rem"}}>
                     <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={vendor5}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
