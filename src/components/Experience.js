@@ -116,7 +116,7 @@ const Experience = () => {
                             <div className={classes.timelineDot}/>
 
                             <h4 className={classes.roleTitle}>
-                                <span style={{color: "#ffffff"}}>Senior Analyst – Full Stack Developer</span>
+                                <span style={{color: "#ffffff"}}>Senior Software Engineer</span>
                             </h4>
 
                             <p className={classes.roleMeta}>
@@ -156,7 +156,7 @@ const Experience = () => {
                             <div className={classes.timelineDot}/>
 
                             <h4 className={classes.roleTitle}>
-                                <span style={{color: "#ffffff"}}>Systems Developer</span>
+                                <span style={{color: "#ffffff"}}>Software Engineer</span>
                             </h4>
 
                             <p className={classes.roleMeta}>
